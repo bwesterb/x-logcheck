@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rpc.idmapd\[[[:digit:]]+\]: nss_getpwnam: name '[a-z0-9-]+' not found in domain 'localdomain'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rpc.idmapd\[[[:digit:]]+\]: nss_getpwnam: name '[a-z0-9]+' dpes not map into domain 'localdomain'$

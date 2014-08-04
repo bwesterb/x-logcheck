@@ -1,4 +1,6 @@
 *.dpkg-dist
+*.dpkg-old
+*.dpkg-new
 /violations.d/smartd
 /violations.d/kernel
 /violations.d/su
