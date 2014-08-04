@@ -1,3 +1,4 @@
+*.dpkg-dist
 /violations.d/smartd
 /violations.d/kernel
 /violations.d/su
@@ -6,8 +7,11 @@
 /violations.d/sudo
 /ignore.d.server/gnu-imap4d
 /ignore.d.server/courier
+/ignore.d.server/courier-imap
+/ignore.d.server/courier-imap-ssl
 /ignore.d.server/imap
 /ignore.d.server/rsync
+/ignore.d.server/razor
 /ignore.d.server/dcc
 /ignore.d.server/tftpd
 /ignore.d.server/ntop
@@ -204,6 +208,10 @@
 /violations.ignore.d/logcheck-sudo
 /violations.ignore.d/logcheck-su
 /violations.ignore.d/netatalk
+/violations.ignore.d/courier-imap
+/violations.ignore.d/courier-imap-ssl
+/violations.ignore.d/logcheck-sudo
+/violations.ignore.d/logcheck-su
 /cracking.d/tftpd
 /cracking.d/uucico
 /cracking.d/rsh
