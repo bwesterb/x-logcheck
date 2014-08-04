@@ -1,0 +1,2 @@
+systemd-logind\[[0-9]+\]: New session c?[0-9]+ of user [a-z]+.$
+systemd-logind\[[0-9]+\]: Removed session c?[0-9]+.$
