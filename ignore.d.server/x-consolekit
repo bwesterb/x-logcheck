@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ console-kit-daemon\[[[:digit:]]+\]: GLib-CRITICAL: Source ID [[:digit:]]+ was not found when attempting to remove it$
