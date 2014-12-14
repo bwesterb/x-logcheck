@@ -41,6 +41,7 @@
 /ignore.d.server/pptpd
 /ignore.d.server/netconsole
 /ignore.d.server/cyrus
+/ignore.d.server/libsasl2-modules
 /ignore.d.server/ddclient
 /ignore.d.server/acpid
 /ignore.d.server/rpc_statd
