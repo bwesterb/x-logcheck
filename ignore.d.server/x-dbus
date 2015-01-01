@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus\[[[:digit:]]+\]: \[system\] Successfully activated service 'org.freedesktop.systemd1'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus\[[[:digit:]]+\]: \[system\] Activating service name='org.freedesktop.systemd1' \(using servicehelper\)$
