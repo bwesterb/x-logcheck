@@ -36,6 +36,7 @@ afpd\[[0-9]+\]: dsi_stream_read: len:-1, Connection timed out$
 afpd\[[0-9]+\]: read: No route to host$
 afpd\[[0-9]+\]: afp_alarm: sleep time ended$
 afpd\[[0-9]+\]: sys_getextattr_size: error: Permission denied$
+afpd\[[0-9]+\]: sys_getextattr_size: error: No such file or directory$
 afpd\[[0-9]+\]: last message repeated [[:digit:]]+ times$
 afpd\[[0-9]+\]: read: Connection timed out$
 afpd\[[0-9]+\]: AFP Replay Cache match: id: [[:digit:]]+ / cmd: AFP_(ENUMERATE_EXT2|GETFLDRPARAM)$
