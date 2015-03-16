@@ -1,3 +1,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: hostname .+ does not resolve to address .+: Name or service not known$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: hostname [^[:space:]]+ does not resolve to address .+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: SSL_accept error from unknown\[[[:digit:]\.]+\]: lost connection$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/lmtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^>]+>, orig_to=<[^>]+>, relay=[a-z.]+\[dspam/deliver\], delay=[[:digit:]\.]+, delays=[[:digit:]\./]+, dsn=[[:digit:]\.]+, status=sent \([^)]+\)$
