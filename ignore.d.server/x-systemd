@@ -1,0 +1,17 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Starting|Started) Session [[:digit:]]+ of user [^[:space:]]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: (Reexecuting|Reloading)\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: systemd [[:digit:]]+ running in system mode. \((\+[[:alnum:]]+ ?)+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: Expecting device [^[:space:]]+\.device\.\.\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: Start(ing|ed) Cleanup of Temporary Directories\.+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: Start(ing|ed) Run anacron jobs\.+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-logind\[[[:digit:]]+\]: New session [[:digit:]]+ of user [^[:space:]]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-logind\[[[:digit:]]+\]: Removed session [[:digit:]]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: Stopping (Timers|Default|Basic System|Paths|Sockets)\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: Stopped target (Timers|Default|Basic System|Paths|Sockets)\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: Starting (Shutdown|Exit the Session\.\.|Timers|Default|Basic System|Paths|Sockets)\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: Reached target (Shutdown|Timers|Default|Basic System|Paths|Sockets)\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: Received SIGRTMIN\+24 from PID [[:digit:]]+ \(kill\)\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: Startup finished in [[:digit:]]+ms\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: (Start|Stopp)(ing|ed) User Manager for UID [0-9]+\.+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: (Starting|Created|Stopping|Removed)( slice)? (user|system)-[\\[:alnum:]]+\.slice\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd: pam_unix\(systemd-user:session\): session (opened|closed) for user [[:alnum:]]+( by \(uid=[0-9]+\))?$
