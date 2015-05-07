@@ -2,3 +2,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: .*bad signature
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: key retrieval failed
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: syntax error
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: s=[[:digit:]]+ d=[^ ]+ SSL$
