@@ -1,0 +1,3 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: RTR-SOLICIT
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: RTR-ADVERT
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: DHCPINFORMATION-REQUEST
