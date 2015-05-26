@@ -2,3 +2,4 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: RTR-ADVERT
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: DHCPINFORMATION-REQUEST
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: SLAAC-CONFIRM
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: message repeated
