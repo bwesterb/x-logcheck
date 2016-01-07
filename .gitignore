@@ -23,6 +23,7 @@
 /ignore.d.server/puppetd
 /ignore.d.server/dhclient
 /ignore.d.server/libpam-krb5
+/ignore.d.server/rssh
 /ignore.d.server/dictd
 /ignore.d.server/openvpn
 /ignore.d.server/teapop
