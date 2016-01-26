@@ -17,3 +17,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Start|Stopp)(ing|ed) User Manager for UID [0-9]+\.+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Starting|Created|Stopping|Removed)( slice)? (user|system)-[\\[:alnum:]]+\.slice\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd: pam_unix\(systemd-user:session\): session (opened|closed) for user [[:alnum:]]+( by \(uid=[0-9]+\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-timesyncd\[[[:digit:]]+\]: interval/delta/delay/jitter/drift
