@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ transmission-daemon: getaddrinfo\*\.gaih_getanswer: got type "46"$
