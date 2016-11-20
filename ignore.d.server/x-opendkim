@@ -6,7 +6,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: no signing table match
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: can't parse From: header value
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: DKIM verification successful$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: DKIM-Signature header added \(s=[^ ]+, d=[^ ]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: DKIM-Signature (header|field) added \(s=[^ ]+, d=[^ ]+\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: no signature data$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: not authenticated$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: .*not internal$
