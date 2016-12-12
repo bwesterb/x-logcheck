@@ -1,2 +1,3 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client [.:[:xdigit:]]+#[[:digit:]]+: \([^)]+\): query \(cache\) [^ ]+ denied$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]:   validating
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: transfer of 'lan\.sw\.w-nz\.com
