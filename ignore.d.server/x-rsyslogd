@@ -1,3 +1,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rsyslogd-[[:digit:]]+: imuxsock begins to drop messages from pid [0-9]+ due to rate-limiting$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rsyslogd-[[:digit:]]+: imuxsock lost [0-9]+ messages from pid [0-9]+ due to rate-limiting$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rsyslogd-[[:digit:]]+: action 'action 18' suspended
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rsyslogd-[[:digit:]]+: action 'action 17' suspended
