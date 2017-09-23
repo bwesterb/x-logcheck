@@ -23,3 +23,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Change of username or service not allowed:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Disconnecting: Too many authentication failures
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Connection closed by [0-9\.]+ port [0-9]+ \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Invalid user [a-z0-9]+ from [0-9\.]+ port [0-9]+$
