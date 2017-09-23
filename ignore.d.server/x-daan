@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ daan\[[[:digit:]]+\]: [[:digit:]]+ (INFO|DEBUG) .*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ daan\[[[:digit:]]+\]: Password set for [[:alnum:]]$
