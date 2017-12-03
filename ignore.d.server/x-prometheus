@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[0-9]+\]: time="[^"]*" level=info msg="Checkpointing in-memory metrics and chunks\.\.\." source="[^"]*"$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[0-9]+\]: time="[^"]*" level=info msg="Done checkpointing in-memory metrics and chunks in [0-9.]+ms" source="[^"]*"$
