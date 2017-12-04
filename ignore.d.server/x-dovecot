@@ -5,6 +5,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (dovecot: )?((deliver|lda|lmtp)\([-_.@[:alnum:]]+\)|lda\([-_.@\w]+\)): sieve: msgid=<?[^\(]*>?( \(((added by )?[^[:space:]]+|sfid-[_[:xdigit:]]+)\)?)?[[:space:]]*: (stored mail into mailbox '.*'|marked message to be discarded if not explicitly delivered \(discard action\)|(forwarded to|sent vacation response to|discarding vacation response for message implicitly delivered to|not sending vacation response to system address|discarding vacation response to mailinglist recipient|discarded vacation reply to|discarding vacation response to (auto-submitted|precedence=bulk) message from|discarded duplicate (vacation response|forward) to) <[^[:space:]]*>)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected \(no auth attempts\): rip=[.[:digit:]]+, lip=[.[:digit:]]+(, (TLS|SSL|secured))?.*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected \(no auth attempts in [[:digit:]]+ secs\):
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: Inactivity
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: mysql: Connected to [._[:alnum:]-]+ \(postfix\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: ssl-params: (Generating )?SSL parameters( regeneration completed)?$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (lda|lmtp)\([[:alnum:]]+\): msgid=<[[:alnum:]]+>: stored mail into mailbox '[[:alnum:]]+'$
