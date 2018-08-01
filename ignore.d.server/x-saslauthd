@@ -1,3 +1,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd\[[[:digit:]]+\]: Entry not found
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd\[[[:digit:]]+\]: Authentication failed for
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd\[[[:digit:]]+\]: do_auth
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ saslauthd\[[[:digit:]]+\]: +: auth failure: \[user=

@@ -2,3 +2,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rsyslogd-[[:digit:]]+: imuxsock lost [0-9]+ messages from pid [0-9]+ due to rate-limiting$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rsyslogd-[[:digit:]]+: action 'action 18' suspended
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rsyslogd-[[:digit:]]+: action 'action 17' suspended
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ liblogging-stdlog: \[origin software="rsyslogd" swVersion="[0-9.]+" x-pid="[0-9]+" x-info="http://www.rsyslog.com"\] rsyslogd was HUPed$
