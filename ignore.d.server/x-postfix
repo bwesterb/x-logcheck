@@ -7,3 +7,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/lmtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^>]+>, orig_to=<[^>]+>, relay=[a-z.]+\[dspam/deliver\], delay=[[:digit:]\.]+, delays=[[:digit:]\./]+, dsn=[[:digit:]\.]+, status=sent \([^)]+\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/bounce\[[[:digit:]]+\]: warning: malformed request$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/qmgr\[[[:digit:]]+\]: warning: private/defer socket: malformed request$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: TLS library problem: error:[0-9]+:SSL routines:SSL3_READ_BYTES
