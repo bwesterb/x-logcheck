@@ -8,9 +8,11 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Disconnected: Inactivity
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: mysql: Connected to [._[:alnum:]-]+ \(postfix\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: ssl-params: (Generating )?SSL parameters( regeneration completed)?$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (lda|lmtp)\([[:alnum:]]+\): msgid=<[[:alnum:]]+>: stored mail into mailbox '[[:alnum:]]+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (lda|lmtp)\([[:alnum:]]+\): msgid=<[^>]+>: stored mail into mailbox '[[:alnum:]]+'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([[:alnum:]]+\): Connect from local$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([[:alnum:]]+\): Disconnect from local: Client quit \(in reset\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([[:alnum:]]+\): Disconnect from local: Successful quit$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([[:alnum:]]+, [a-z]+\): [[:alnum:]/+]+: sieve: msgid=[^:]+: stored mail into mailbox '[[:alnum:]]+'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([[:alnum:]]+, [a-z]+\): [[:alnum:]/+]+: msgid=<[^>]+>: saved mail to INBOX$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([[:alnum:]]+\): Logged out
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]]+\): Logged out
