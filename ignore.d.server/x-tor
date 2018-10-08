@@ -1,0 +1,5 @@
+Tor\[[0-9]+\]: Heartbeat
+Tor\[[0-9]+\]: Average packaged cell fullness
+Tor\[[0-9]+\]: Circuit handshake stats since last time
+Tor\[[0-9]+\]: Since startup, we have initiated
+Tor\[[0-9]+\]: DoS mitigation since startup

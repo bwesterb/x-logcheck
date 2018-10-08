@@ -1,1 +1,2 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: Blocking 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: [^ ]+ has already been blocked

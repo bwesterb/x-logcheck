@@ -20,7 +20,7 @@ afpd\[[0-9]+\]: posix_acls_to_uaperms\(path, st, ma\) failed: No such file or di
 afpd\[[0-9]+\]: pam_xdg_support\(netatalk:session\): Called as non-root.$
 afpd\[[0-9]+\]: AFP logout by [a-z]+$
 afpd\[[0-9]+\]: AFP statistics: [\.0-9]+ KB read, [\.0-9]+ KB written$
-afpd\[[0-9]+\]: afp_dsi_transfer_session: succesful primary reconnect$
+afpd\[[0-9]+\]: afp_dsi_transfer_session: successful primary reconnect$
 afpd\[[0-9]+\]: afp_disconnect: trying primary reconnect$
 afpd\[[0-9]+\]: afp_disconnect: primary reconnect succeeded$
 afpd\[[0-9]+\]: afp_zzz: entering extended sleep$
