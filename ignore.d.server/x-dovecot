@@ -17,3 +17,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([[:alnum:]]+\): Logged out
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]]+\): Logged out
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (lmtp|pop3|imap)(-login)?(\([-_.@[:alnum:]]+\))?: (Connection closed|Disconnected)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ auth: pam_unix
