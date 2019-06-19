@@ -14,6 +14,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([[:alnum:]]+\): Disconnect from local: Successful quit$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([^\)]+\): [[:alnum:]/+]+: sieve: msgid=[^:]+: stored mail into mailbox '[[:alnum:]]+'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([[:alnum:]]+, [a-z]+\): [[:alnum:]/+]+: msgid=<[^>]+>: saved mail to INBOX$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([[:alnum:]]+\): [[:alnum:]/+]+: msgid=<[^>]+>: saved mail to INBOX$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([[:alnum:]]+\): Logged out
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([[:alnum:]]+\): Logged out
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (lmtp|pop3|imap)(-login)?(\([-_.@[:alnum:]]+\))?: (Connection closed|Disconnected)
