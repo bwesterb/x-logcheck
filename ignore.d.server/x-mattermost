@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ platform\[[[:digit:]]+\]: {"level":"info"
