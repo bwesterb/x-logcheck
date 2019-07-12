@@ -1,0 +1,4 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[0-9]+\]: time="[^"]*" level=info msg="Checkpointing in-memory metrics and chunks\.\.\." source="[^"]*"$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[0-9]+\]: time="[^"]*" level=info msg="Done checkpointing in-memory metrics and chunks in [0-9.]+ms\." source="[^"]*"$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[0-9]+\]: time="[^"]*" level=info msg="Completed maintenance sweep through [0-9]+ in-memory fingerprints in [0-9.ms]+\." source="[^"]*"$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Starting|Started) Collect apt metrics for prometheus-node-exporter

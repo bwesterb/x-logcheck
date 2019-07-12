@@ -1,1 +1,3 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: Blocking [.[:digit:]]+:[[:digit:]]+ for >[[:digit:]]+secs: [[:digit:]]+ danger in [[:digit:]]+ attacks over [[:digit:]]+ seconds \(all: [[:digit:]]+d in [[:digit:]]+ abuses over [[:digit:]]+s\)\.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: Blocking 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: [^ ]+ has already been blocked
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: Attack from

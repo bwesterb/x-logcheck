@@ -223,5 +223,6 @@
 /cracking.d/kernel
 /cracking.d/rlogind
 /ignore.d.server/mariadb-server-10_1
-ignore.d.server/systemd
-ignore.d.server/systemd-timesyncd
+/ignore.d.server/systemd
+/ignore.d.server/gpg-agent
+/ignore.d.server/systemd-timesyncd

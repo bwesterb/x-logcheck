@@ -1,7 +1,11 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: hostname .+ does not resolve to address .+: Name or service not known$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: hostname [^[:space:]]+ does not resolve to address .+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: SSL_accept error from unknown\[[[:alnum:]\.:]+\]: lost connection$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: TLS library problem: error:[[:alnum:]]+:SSL routines:SSL23_GET_CLIENT_HELLO
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: SSL_accept error from [[:digit:]][[:alnum:].-]+\[[[:alnum:]\.:]+\]: lost connection$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: disconnect from
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: improper command pipelining after
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/lmtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^>]+>, orig_to=<[^>]+>, relay=[a-z.]+\[dspam/deliver\], delay=[[:digit:]\.]+, delays=[[:digit:]\./]+, dsn=[[:digit:]\.]+, status=sent \([^)]+\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/bounce\[[[:digit:]]+\]: warning: malformed request$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/qmgr\[[[:digit:]]+\]: warning: private/defer socket: malformed request$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: TLS library problem: error:[0-9]+:SSL routines:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: [^[:space:]]+: SASL Login authentication failed

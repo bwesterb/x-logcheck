@@ -1,4 +1,4 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cilia\[[[:digit:]]+\]: [[:digit:]]+ (INFO|DEBUG):.*$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cilia\[[[:digit:]]+\]: (INFO|DEBUG):.*$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cilia\[[[:digit:]]+\]: (Adding|Removing) user [[:alnum:]-]+ (to|from) group kn-[[:alnum:]-]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ gpasswd\[[[:digit:]]+\]: user [[:alnum:]-]+ (added|removed) by root (to|from) group kn-[[:alnum:]-]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ usermod\[[[:digit:]]+\]: change user '[[:alnum:]-]+' expiration from '5004-09-01' to '[0-9-]+'$

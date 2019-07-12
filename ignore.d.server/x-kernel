@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? icmp6_send: no reply to icmp error$
