@@ -6,3 +6,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[0-9]+\]: .* msg="compact blocks"
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[0-9]+\]: .* msg="head GC completed"
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[0-9]+\]: .* msg="write block"
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Starting|Started) Collect SMART metrics for prometheus-node-exporter\.\.\.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: prometheus-node-exporter-smartmon.service: Succeeded\.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]:  prometheus-node-exporter-apt.service: Succeeded.
