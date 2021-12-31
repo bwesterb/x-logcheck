@@ -148,6 +148,8 @@
 /ignore.d.server/scponly
 /ignore.d.server/sa-exim
 /ignore.d.server/transmission
+/ignore.d.server/netfilter-persistent
+/ignore.d.server/systemd-logind
 /header.txt
 /logcheck.logfiles
 /logcheck.conf
