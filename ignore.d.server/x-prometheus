@@ -13,3 +13,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: prometheus-node-exporter-smartmon.service: Deactivated
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: prometheus-node-exporter-smartmon.service: Consumed
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Finished Collect SMART metrics for
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[0-9]+\]: .* msg="Head GC completed"
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[0-9]+\]: .* msg="Creating checkpoint"
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[0-9]+\]: .* msg="WAL checkpoint complete"
