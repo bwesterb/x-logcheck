@@ -8,4 +8,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[0-9]+\]: .* msg="write block"
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Starting|Started) Collect SMART metrics for prometheus-node-exporter\.\.\.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: prometheus-node-exporter-smartmon.service: Succeeded\.
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]:  prometheus-node-exporter-apt.service: Succeeded.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: prometheus-node-exporter-apt.service: Deactivated
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: prometheus-node-exporter-apt.service: Consumed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: prometheus-node-exporter-smartmon.service: Deactivated
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: prometheus-node-exporter-smartmon.service: Consumed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Finished Collect SMART metrics for
