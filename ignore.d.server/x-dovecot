@@ -15,10 +15,11 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([[:alnum:]]+\): Disconnect from local: Client has quit the connection \(state=READY\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([^\)]+\): [[:alnum:]/+]+: sieve: msgid=[^:]+: stored mail into mailbox '[[:alnum:]]+'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([[:alnum:]]+, [a-z]+\): [[:alnum:]/+]+: msgid=<[^>]+>: saved mail to INBOX$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp\([[:alnum:]]+\): [[:alnum:]/+]+: msgid=<[^>]+>: saved mail to INBOX$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: lmtp[^ ]+: msgid=<[^>]+>: saved mail to INBOX$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (lmtp|imap)\([[:alnum:]]+\)(<[^>]*>)*: Logged out
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (lmtp|pop3|imap)(-login)?(\([-_.@[:alnum:]]+\))?: (Connection closed|Disconnected)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ auth: pam_unix
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: auth client 0 disconnected with 1 pending requests: Connection reset by peer$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: auth client 0 disconnected with 1 pending requests: EOF$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Aborted login
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)[^ ]+ (Disconnected for inactivity|Connection closed)
