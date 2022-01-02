@@ -3,7 +3,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: key retrieval failed
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: failed to parse authentication-results
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: syntax error
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: s=[^ ]+ d=[^ ]+ (a=[^ ]+)?SSL
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: s=[^ ]+ d=[^ ]+( a=[^ ]+)? SSL
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: no signing table match
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: can't parse From: header value
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: DKIM verification successful$

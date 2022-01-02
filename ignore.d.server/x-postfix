@@ -9,3 +9,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/qmgr\[[[:digit:]]+\]: warning: private/defer socket: malformed request$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: TLS library problem: error:[0-9]+:SSL routines:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: [^[:space:]]+: SASL Login authentication failed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: milter-reject:.*Spam message rejected
