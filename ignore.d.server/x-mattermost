@@ -1,1 +1,2 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mattermost\[[[:digit:]]+\]: .*"level":"info"
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mattermost\[[[:digit:]]+\]: .*"msg":"Unable to parse developer flag"
