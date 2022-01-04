@@ -1,1 +1,2 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mysqld\[[[:digit:]]+\]: warning: can't get client address: Connection reset by peer$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mariadbd\[[[:digit:]]+\]: warning: can't get client address: Connection reset by peer$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mariadbd\[[[:digit:]]+\]: .*Aborted connection .*mailman3.* Got an error reading communication packets
