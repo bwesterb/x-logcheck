@@ -1,2 +1,2 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ transmission-daemon: getaddrinfo\*\.gaih_getanswer: got type "46"$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ transmission-daemon:.*IPv4 DHT announce failed.*
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ transmission-daemon\[[[:digit:]]+\]: getaddrinfo\*\.gaih_getanswer: got type "46"$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ transmission-daemon\[[[:digit:]]+\]: .*IPv4 DHT announce failed.*
