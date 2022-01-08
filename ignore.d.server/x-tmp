@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} serf smartd\[[[:digit:]]+\]: Device: /dev/sde.*1 Currently unreadable \(pending\) sectors
