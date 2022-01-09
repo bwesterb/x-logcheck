@@ -15,3 +15,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: run-user-[[:digit:]]+-gvfs.mount: Deactivated
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ tracker-miner-fs-3\[[[:digit:]]+\]: OK
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: tracker-miner-fs-3.service: Deactivated
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:.*audit:.*apparmor="DENIED".*name="/proc.*comm="cupsd"
