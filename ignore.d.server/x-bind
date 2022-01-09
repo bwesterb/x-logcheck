@@ -16,3 +16,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: transfer of '[._[:alnum:]-]+/IN' from [.:[:xdigit:]]+#[[:digit:]]: connected using
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: transfer of '[._[:alnum:]-]+/IN' from [.:[:xdigit:]]+#[[:digit:]]: Transfer status: up to date
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: transfer of '[._[:alnum:]-]+/IN' from [.:[:xdigit:]]+#[[:digit:]]: Transfer completed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: reducing DNS packet size for nameserver
