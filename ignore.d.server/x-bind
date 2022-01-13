@@ -17,3 +17,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: transfer of '[._[:alnum:]-]+/IN' from [.:[:xdigit:]]+#[[:digit:]]: Transfer status: up to date
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: transfer of '[._[:alnum:]-]+/IN' from [.:[:xdigit:]]+#[[:digit:]]: Transfer completed
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: reducing DNS packet size for nameserver
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: managed-keys-zone: Key [[:digit:]]+ for zone \. is now trusted
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: _default: sending trust-anchor-telemetry query

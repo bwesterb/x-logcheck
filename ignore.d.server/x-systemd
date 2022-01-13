@@ -39,9 +39,9 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Finished Ubuntu Advantage Timer for running repeated jobs.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: ua-timer.service: Deactivated successfully.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: anacron.service: Deactivated successfully.
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: update-notifier-download: Deactivated successfully.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: update-notifier-download.service: Deactivated successfully.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Finished Download data for packages that failed at package install time.
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Created slice User Application Slice
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Removed|Created) slice User Application Slice
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Queued start job for default target Main User Target.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: gpgconf: error running.*probably not installed
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Finished User Runtime Directory
@@ -57,9 +57,15 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: fwupd-refresh.service: Deactivated successfully.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: fwupd.service: Deactivated successfully.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fwupd\[[[:digit:]]+\]:.*FuPluginPciMei.*ME family not supported
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fwupd\[[[:digit:]]+\]: Updating lvfs
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fwupd\[[[:digit:]]+\]: Successfully downloaded new metadata:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: systemd-tmpfiles-clean.service: Deactivated successfully.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: apt-daily.service: Deactivated successfully.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ runuser: pam_unix\(runuser:session\): session (opened|closed) for user
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Removed slice User Core Session Slice
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: e2scrub_all.service: Deactivated successfully.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: apt-daily-upgrade.service: Deactivated successfully
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: fstrim.service: Deactivated successfully
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Finished Discard unused blocks on filesystems from
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fstrim\[[[:digit:]]+\]:.*trimmed on.* 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Finished Check to see whether there is a new version of

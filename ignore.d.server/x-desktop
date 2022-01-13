@@ -7,8 +7,10 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: pulseaudio.service: Deactivated successfully
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ gvfsd\[[[:digit:]]+\]: A connection to the bus can't be made
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Stopping Virtual filesystem service
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: gvfs-goa-volume-monitor.*Deactivated successfuly
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: gvfs-(goa|mtp|gphoto2|afc)-volume-monitor.*Deactivated successfully
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: gvfs-daemon.*Deactivated successfully
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: dbus-service: Killing process
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: dbus-service: Deactivated successfully
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: gvfs-udisks2-volume-monitor.service.*Deactivated successfully
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Stopped Virtual filesystem service
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: pipewire-media-session.service: Deactivated
@@ -16,3 +18,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ tracker-miner-fs-3\[[[:digit:]]+\]: OK
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: tracker-miner-fs-3.service: Deactivated
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:.*audit:.*apparmor="DENIED".*name="/proc.*comm="cupsd"
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Closed Sound System
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: snapd.session-agent.socket: Deactivated successfully
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Closed debconf communication socket
