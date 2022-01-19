@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd.service: Sent signal SIGUSR1 to main process
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd.service: Sending signal SIGUSR1 to process

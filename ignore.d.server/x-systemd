@@ -69,3 +69,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Finished Discard unused blocks on filesystems from
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fstrim\[[[:digit:]]+\]:.*trimmed on.* 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Finished Check to see whether there is a new version of
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: session-c[[:digit:]]+.scope: Consumed [^ ]+ CPU time.

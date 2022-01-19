@@ -3,3 +3,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: chase DS servers resolving
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: .*client [^ ]+ [^ ]+ [^ ]+ query .* denied
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: increase from [[:digit:]]+ to [[:digit:]]+ RRL entries with [[:digit:]]+ bins; average search length
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: SERVFAIL unexpected RCODE resolving
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client [^ ]+ [^ ]+ [^ ]+ zone transfer .* denied
