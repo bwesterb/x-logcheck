@@ -57,8 +57,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: fwupd-refresh.service: Deactivated successfully.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: fwupd.service: Deactivated successfully.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fwupd\[[[:digit:]]+\]:.*FuPluginPciMei.*ME family not supported
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fwupd\[[[:digit:]]+\]: Updating lvfs
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fwupd\[[[:digit:]]+\]: Successfully downloaded new metadata:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fwupd(|mgr)\[[[:digit:]]+\]: Updating lvfs
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fwupd(|mgr)\[[[:digit:]]+\]: Successfully downloaded new metadata:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: systemd-tmpfiles-clean.service: Deactivated successfully.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: apt-daily.service: Deactivated successfully.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ runuser: pam_unix\(runuser:session\): session (opened|closed) for user

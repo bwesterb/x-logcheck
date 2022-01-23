@@ -21,3 +21,12 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Closed Sound System
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: snapd.session-agent.socket: Deactivated successfully
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Closed debconf communication socket
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ tracker-extract\[[[:digit:]]+\]: Could not get mimetype, Error when getting information for file
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ tracker-extract\[[[:digit:]]+\]: Task for .* finished with error: Error when getting information for file
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: tracker-extract-[[:digit:]]+.service: Deactivated successfully
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: man-db.service: Deactivated successfully
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pipewire-media-session\[[[:digit:]]\]: RTKit error:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pipewire-media-session\[[[:digit:]]\]: could not set nice-level to
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rtkit-daemon\[[[:digit:]]\]: Supervising
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pipewire\[[[:digit:]]\]: RTKit error
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pipewire\[[[:digit:]]\]: could not set nice-level to

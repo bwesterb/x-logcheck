@@ -4,3 +4,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS Error: unknown opcode received from
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS Error: session-id not found in packet from
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? Server poll timeout, restarting
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS Error:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? TLS_ERROR
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (openvpn|ovpn-[._[:alnum:]-]+)\[[[:digit:]]+\]:( ([-_.@[:alnum:]]+/)?[.[:digit:]]{7,15}:[[:digit:]]{2,5})? OpenSSL: error
