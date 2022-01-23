@@ -2,6 +2,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: hostname [^[:space:]]+ does not resolve to address .+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: TLS library problem: error:[[:alnum:]]+:SSL routines:SSL23_GET_CLIENT_HELLO
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: SSL_accept error from [^ ]+ lost connection$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: SSL_accept error from [^ ]+ Connection timed out
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: disconnect from
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: improper command pipelining after
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/lmtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^>]+>, orig_to=<[^>]+>, relay=[^,]+, delay=[[:digit:]\.]+, delays=[[:digit:]\./]+, dsn=[[:digit:]\.]+, status=sent
@@ -12,3 +13,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: milter-reject:.*Spam message rejected
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: milter-reject: END-OF-MESSAGE from.*Try again later
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [[:alnum:]]+: client=[^ ]+ sasl_method=[^ ]+ sasl_username=[[:alnum:]]+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: NOQUEUE: reject: RCPT from .* blocked using zen.spamhaus.org
