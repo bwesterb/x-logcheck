@@ -14,6 +14,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: gvfs-udisks2-volume-monitor.service.*Deactivated successfully
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Stopped Virtual filesystem service
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: pipewire-media-session.service: Deactivated
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: pipewire-media-session.service: Consumed
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: run-user-[[:digit:]]+-gvfs.mount: Deactivated
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ tracker-miner-fs-3\[[[:digit:]]+\]: OK
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: tracker-miner-fs-3.service: Deactivated
@@ -30,3 +31,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rtkit-daemon\[[[:digit:]]\]: Supervising
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pipewire\[[[:digit:]]\]: RTKit error
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pipewire\[[[:digit:]]\]: could not set nice-level to
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: session.slice: Consumed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: dbus.service: Consumed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Mount(ing|ed) Mount unit for firefox
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]\.]+\] loop[[:digit:]]+: detected capacity change

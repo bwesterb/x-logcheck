@@ -56,6 +56,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Finished Refresh fwupd metadata and update motd
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: fwupd-refresh.service: Deactivated successfully.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: fwupd.service: Deactivated successfully.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: fwupd.service: Consumed
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fwupd\[[[:digit:]]+\]:.*FuPluginPciMei.*ME family not supported
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fwupd(|mgr)\[[[:digit:]]+\]: Updating lvfs
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fwupd(|mgr)\[[[:digit:]]+\]: Successfully downloaded new metadata:
