@@ -1,6 +1,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: hostname .+ does not resolve to address .+: Name or service not known$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: hostname [^[:space:]]+ does not resolve to address .+$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: TLS library problem: error:[[:alnum:]]+:SSL routines:SSL23_GET_CLIENT_HELLO
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: TLS library problem: 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: SSL_accept error from [^ ]+ lost connection$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: SSL_accept error from [^ ]+ Connection timed out
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: disconnect from
