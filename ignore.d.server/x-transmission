@@ -1,2 +1,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ transmission-daemon\[[[:digit:]]+\]: getaddrinfo\*\.gaih_getanswer: got type "46"$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: transmission-daemon.service: Service reached runtime time limit
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ transmission-daemon\[[[:digit:]]+\]: .*IPv[46] DHT announce failed.*
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: transmission-daemon.service: Failed with result 'timeout'
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: transmission-daemon.service: Consumed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: transmission-daemon.service: Scheduled restart job
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ transmission-daemon\[[[:digit:]]+\]: .*UDP Failed to set send buffer
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ transmission-daemon\[[[:digit:]]+\]: .*UDP Failed to set receive buffer
