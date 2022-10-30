@@ -35,3 +35,13 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: dbus.service: Consumed
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Mount(ing|ed) Mount unit for firefox
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]\.]+\] loop[[:digit:]]+: detected capacity change
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: PipeWire PulseAudio was skipped because of a failed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: wireplumber.service: Job wireplumber.service/start failed with
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Dependency failed for Multimedia Service Session Manager
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Bound to unit pipwire.service, but unit
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Tracker metadata extractor was skipped
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: PipeWire Multimedia was skipped because of a failed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: PipeWire Multimedia System Socket was skipped because of a failed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: PipeWire PulseAudio was skipped because of a
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Listening on GNOME Keyring daemon
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Listening on GCR ssh-agent wrapper

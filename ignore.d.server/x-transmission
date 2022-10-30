@@ -6,3 +6,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: transmission-daemon.service: Scheduled restart job
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ transmission-daemon\[[[:digit:]]+\]: .*UDP Failed to set send buffer
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ transmission-daemon\[[[:digit:]]+\]: .*UDP Failed to set receive buffer
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ transmission-daemon\[[[:digit:]]+\]: Closing transmission session
