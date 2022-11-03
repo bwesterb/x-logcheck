@@ -48,3 +48,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Activating special unit Exit the Session
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Closed GCR ssh-agent wrapper
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Closed GNOME Keyring daemon
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cups\.cups-browserd\[[[:digit:]]+\]: \+ true
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cups\.cups-browserd\[[[:digit:]]+\]: \+ sleep
