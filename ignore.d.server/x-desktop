@@ -24,29 +24,29 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Closed debconf communication socket
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ tracker-extract\[[[:digit:]]+\]: Could not get mimetype, Error when getting information for file
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ tracker-extract\[[[:digit:]]+\]: Task for .* finished with error: Error when getting information for file
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: tracker-extract-[[:digit:]]+.service: Deactivated successfully
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: man-db.service: Deactivated successfully
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pipewire-media-session\[[[:digit:]]\]: RTKit error:
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pipewire-media-session\[[[:digit:]]\]: could not set nice-level to
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rtkit-daemon\[[[:digit:]]\]: Supervising
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pipewire\[[[:digit:]]\]: RTKit error
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pipewire\[[[:digit:]]\]: could not set nice-level to
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: session.slice: Consumed
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: dbus.service: Consumed
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Mount(ing|ed) Mount unit for firefox
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: tracker-extract-[[:digit:]]+.service: Deactivated successfully
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: man-db.service: Deactivated successfully
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pipewire-media-session\[[[:digit:]]+\]: RTKit error:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pipewire-media-session\[[[:digit:]]+\]: could not set nice-level to
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rtkit-daemon\[[[:digit:]]+\]: Supervising
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pipewire\[[[:digit:]]+\]: RTKit error
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pipewire\[[[:digit:]]+\]: could not set nice-level to
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: session.slice: Consumed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: dbus.service: Consumed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Mount(ing|ed) Mount unit for firefox
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: \[[[:digit:]\.]+\] loop[[:digit:]]+: detected capacity change
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: PipeWire PulseAudio was skipped because of a failed
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: wireplumber.service: Job wireplumber.service/start failed with
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Dependency failed for Multimedia Service Session Manager
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Bound to unit pipwire.service, but unit
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Tracker metadata extractor was skipped
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: PipeWire Multimedia was skipped because of a failed
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: PipeWire Multimedia System Socket was skipped because of a failed
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: PipeWire PulseAudio was skipped because of a
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Listening on GNOME Keyring daemon
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Listening on GCR ssh-agent wrapper
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Activating special unit Exit the Session
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Closed GCR ssh-agent wrapper
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]\]: Closed GNOME Keyring daemon
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: PipeWire PulseAudio was skipped because of a failed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: wireplumber.service: Job wireplumber.service/start failed with
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Dependency failed for Multimedia Service Session Manager
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Bound to unit pipwire.service, but unit
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Tracker metadata extractor was skipped
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: PipeWire Multimedia was skipped because of a failed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: PipeWire Multimedia System Socket was skipped because of a failed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: PipeWire PulseAudio was skipped because of a
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Listening on GNOME Keyring daemon
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Listening on GCR ssh-agent wrapper
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Activating special unit Exit the Session
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Closed GCR ssh-agent wrapper
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Closed GNOME Keyring daemon
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cups\.cups-browsed\[[[:digit:]]+\]: . true
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cups\.cups-browsed\[[[:digit:]]+\]: . sleep

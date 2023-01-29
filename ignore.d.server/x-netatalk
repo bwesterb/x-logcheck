@@ -41,3 +41,4 @@ afpd\[[0-9]+\]: last message repeated [[:digit:]]+ times$
 afpd\[[0-9]+\]: read: Connection timed out$
 afpd\[[0-9]+\]: AFP Replay Cache match: id: [[:digit:]]+ / cmd: AFP_(ENUMERATE_EXT2|GETFLDRPARAM)$
 afpd\[[0-9]+\]: afp_over_dsi: client logged out, terminating DSI session
+afpd\[[0-9]+\]: pam_unix(netatalk:session): session opened for user
