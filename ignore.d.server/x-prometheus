@@ -17,3 +17,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[0-9]+\]: .* msg="Creating checkpoint"
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[0-9]+\]: .* msg="WAL checkpoint complete"
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[0-9]+\]: .* msg="Deleting obsolete block"
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ping_exporter\[[0-9]+\]: .* msg="refreshing DNS"
