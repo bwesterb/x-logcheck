@@ -1,2 +1,2 @@
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana(?:-server)?\[[0-9]+\]: t=[^ ]+ lvl=[^ ]* msg="failed to look up user based on cookie"
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana(?:-server)?\[[0-9]+\]: .*(lvl|level)=info .*
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana(-server)?\[[0-9]+\]: t=[^ ]+ lvl=[^ ]* msg="failed to look up user based on cookie"
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana(-server)?\[[0-9]+\]: .*(lvl|level)=info .*

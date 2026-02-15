@@ -1,3 +1,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ snapd\[[0-9]+\]: [\/0-9]{10} [:0-9]{8}\.[0-9]+ snapmgr.go:[0-9]+: No snaps to auto-refresh found$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ snapd\[[0-9]+\]: storehelpers.go:[0-9]+: cannot refresh( snap.*|): snap has no updates available
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ snapd\[[0-9]+\]: autorefresh.go:[0-9]+: auto-refresh: all snaps are up-to-date
+^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ cups\.(cupsd|cups-browsed)\[[[:digit:]]+\]: error: timeout waiting for snap system profiles to get updated
+^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ firmware-updater\.firmware-notifier\[[[:digit:]]+\]: error: timeout waiting for snap system profiles to get updated
+^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: snap\.[^:]+: Main process exited, code=exited, status=1/FAILURE
+^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: snap\.[^:]+: Failed with result 'exit-code'.
