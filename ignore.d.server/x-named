@@ -1,5 +1,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: lame server resolving
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: timed out resolving
+^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: timed out resolving
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: chase DS servers resolving
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: .*client [^ ]+ [^ ]+ [^ ]+ query .* denied
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: increase from [[:digit:]]+ to [[:digit:]]+ RRL entries with [[:digit:]]+ bins; average search length
