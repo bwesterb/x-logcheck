@@ -5,9 +5,9 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: SLAAC-CONFIRM
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: message repeated
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: reducing DNS packet size for nameserver
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: RTR-SOLICIT
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: RTR-ADVERT
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: DHCPSOLICIT
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: DHCPINFORMATION-REQUEST
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: SLAAC-CONFIRM
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: RTR-SOLICIT
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: RTR-ADVERT
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: DHCPSOLICIT
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: DHCPINFORMATION-REQUEST
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: SLAAC-CONFIRM
 

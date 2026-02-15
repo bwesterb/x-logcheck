@@ -13,14 +13,14 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [A-Z0-9]+: .*not internal$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]+: failed to parse [Aa]uthentication-[Rr]esults: header field$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ opendkim\[[[:digit:]]+\]: [[:alnum:]]+: ADSP query: multiple DNS replies for
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: s=[^ ]+ d=[^ ]+( a=[^ ]+)? SSL
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: .*bad signature
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: message has signatures
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: key retrieval failed
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: no signing table match
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: DKIM verification successful$
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: DKIM-Signature (header|field) added
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: no signature data$
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: not authenticated$
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: .*not internal$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: s=[^ ]+ d=[^ ]+( a=[^ ]+)? SSL
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: .*bad signature
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: message has signatures
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: key retrieval failed
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: no signing table match
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: DKIM verification successful$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: DKIM-Signature (header|field) added
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: no signature data$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: not authenticated$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ opendkim(\[[[:digit:]]+\])?: [A-Z0-9]+: .*not internal$
 

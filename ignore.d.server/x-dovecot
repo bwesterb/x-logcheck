@@ -19,12 +19,13 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (lmtp|imap)\([[:alnum:]]+\)(<[^>]*>)*: Logged out
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (lmtp|pop3|imap)(-login)?(\([-_.@[:alnum:]]+\))?: (Connection closed|Disconnected)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ auth: pam_unix
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ auth: pam_unix
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: auth client 0 disconnected with 1 pending requests: Connection reset by peer$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: Warning: auth client 0 disconnected with 1 pending requests: EOF$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)-login: Aborted login
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (pop3|imap)[^ ]+ (Disconnected for inactivity|Connection closed)
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ dovecot: lmtp\([^)]*\): Connect from local$
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ dovecot: lmtp\([^)]*\): Disconnect from local:
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ dovecot: lmtp\([^)]*\)<[^>]*>: sieve: msgid=.*: (fileinto action: )?stored mail into mailbox
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ dovecot: (lmtp|imap)-login: Login:
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ dovecot: imap\([^)]*\)<[^>]*>: Disconnected: Logged out
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dovecot: lmtp\([^)]*\): Connect from local$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dovecot: lmtp\([^)]*\): Disconnect from local:
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dovecot: lmtp\([^)]*\)<[^>]*>: sieve: msgid=.*: (fileinto action: )?stored mail into mailbox
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dovecot: (lmtp|imap)-login: Login:
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dovecot: imap\([^)]*\)<[^>]*>: Disconnected: Logged out

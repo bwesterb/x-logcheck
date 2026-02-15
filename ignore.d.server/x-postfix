@@ -4,19 +4,25 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: SSL_accept error from [^ ]+ lost connection$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: SSL_accept error from [^ ]+ Connection timed out
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: disconnect from
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: disconnect from
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: disconnect from
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: improper command pipelining after
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/lmtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^>]+>, orig_to=<[^>]+>, relay=[^,]+, delay=[[:digit:]\.]+, delays=[[:digit:]\./]+, dsn=[[:digit:]\.]+, status=sent
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/bounce\[[[:digit:]]+\]: warning: malformed request$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/qmgr\[[[:digit:]]+\]: warning: private/defer socket: malformed request$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: TLS library problem: error:[0-9]+:SSL routines:
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: [^[:space:]]+: SASL Login authentication failed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: [^[:space:]]+: SASL (Login|PLAIN) authentication failed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/anvil\[[[:digit:]]+\]: statistics:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: milter-reject:.*Spam message rejected
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: milter-reject: END-OF-MESSAGE from.*Try again later
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [[:alnum:]]+: client=[^ ]+ sasl_method=[^ ]+ sasl_username=[[:alnum:]]+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: NOQUEUE: reject: RCPT from .* blocked using zen.spamhaus.org
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: improper command pipelining after
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ postfix/local\[[[:digit:]]+\]: [[:alnum:]]+: passing <[^>]+> to transport=
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: NOQUEUE: lost connection after (AUTH|EHLO) from
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ postfix/lmtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^>]+>, orig_to=<[^>]+>, relay=[^,]+, delay=[[:digit:]\.]+, delays=[[:digit:]\./]+, dsn=[[:digit:]\.]+, status=sent
-^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: NOQUEUE: reject: RCPT from .* blocked using zen.spamhaus.org
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: improper command pipelining after
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/local\[[[:digit:]]+\]: [[:alnum:]]+: passing <[^>]+> to transport=
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: NOQUEUE: lost connection after (AUTH|EHLO) from
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/lmtp\[[[:digit:]]+\]: [[:alnum:]]+: to=<[^>]+>, orig_to=<[^>]+>, relay=[^,]+, delay=[[:digit:]\.]+, delays=[[:digit:]\./]+, dsn=[[:digit:]\.]+, status=sent
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: NOQUEUE: reject: RCPT from .* blocked using zen.spamhaus.org
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/anvil\[[[:digit:]]+\]: statistics:
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: warning: [^[:space:]]+: SASL (Login|PLAIN) authentication failed
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: message-id=
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [[:alnum:]]+: client=[^ ]+ sasl_method=[^ ]+ sasl_username=[[:alnum:]]+
+
