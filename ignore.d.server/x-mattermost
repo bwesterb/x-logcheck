@@ -5,3 +5,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mattermost\[[[:digit:]]+\]: .*"missing_plugin_id":"com.mattermost.apps"
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mattermost\[[[:digit:]]+\]: .*"msg":"websocket.NextReader: closing websocket"
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mattermost\[[[:digit:]]+\]: .*"msg":"License key from.*required to unlock
+^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ mattermost\[[[:digit:]]+\]: .*"level":"debug"
+^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+[+-]\d{2}:\d{2} [._[:alnum:]-]+ mattermost\[[[:digit:]]+\]: .*"level":"info"
+
