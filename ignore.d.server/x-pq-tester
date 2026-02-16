@@ -1,1 +1,8 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* client sent an HTTP request to an HTTPS server
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* client sent an HTTP request to an HTTPS server
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* tls: client offered only unsupported versions:
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* tls: client offered only unsupported versions:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* tls: no cipher suite supported by both client and server
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* tls: no cipher suite supported by both client and server
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* tls: first record does not look like a TLS handshake
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* tls: first record does not look like a TLS handshake

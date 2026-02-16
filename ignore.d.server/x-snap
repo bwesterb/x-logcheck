@@ -5,3 +5,7 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ firmware-updater\.firmware-notifier\[[[:digit:]]+\]: error: timeout waiting for snap system profiles to get updated
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: snap\.[^:]+: Main process exited, code=exited, status=1/FAILURE
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: snap\.[^:]+: Failed with result 'exit-code'.
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ firmware-updater\.firmware-notifier\[[[:digit:]]+\]: error: cannot find installed snap
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: snap\.[^:]+: Main process exited, code=exited, status=1/FAILURE
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: snap\.[^:]+: Failed with result 'exit-code'.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ firmware-updater\.firmware-notifier\[[[:digit:]]+\]: error: cannot find installed snap

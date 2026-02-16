@@ -10,4 +10,6 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: DHCPSOLICIT
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: DHCPINFORMATION-REQUEST
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: SLAAC-CONFIRM
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: DHCPNAK
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: DHCPNAK
 

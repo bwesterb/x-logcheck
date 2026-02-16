@@ -1,3 +1,8 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: Blocking 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: [^ ]+ has already been blocked
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: Attack from
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: .* unblocking after [[:digit:]]+ secs
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: Blocking
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: .* unblocking after [[:digit:]]+ secs
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: Attack from
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshguard\[[[:digit:]]+\]: [^ ]+ has already been blocked

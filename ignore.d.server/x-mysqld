@@ -1,2 +1,3 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mariadbd\[[[:digit:]]+\]: warning: can't get client address: Connection reset by peer$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mariadbd\[[[:digit:]]+\]: .*Aborted connection .*mailman3.*Got (an error|timeout) reading communication packets
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mariadbd\[[[:digit:]]+\]: .*Aborted connection .*Got (an error|timeout) reading communication packets
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ mariadbd\[[[:digit:]]+\]: .*Aborted connection .*Got (an error|timeout) reading communication packets

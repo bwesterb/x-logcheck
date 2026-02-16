@@ -1,2 +1,10 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+http\.log\.access.+handled request
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+http\.log\.access.+handled request
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls.+cleaning storage unit
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls.+cleaning storage unit
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls.+finished cleaning storage units
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls.+finished cleaning storage units
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+got renewal info
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+got renewal info
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls\.cache\.maintenance.+updated and stored ACME renewal information
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls\.cache\.maintenance.+updated and stored ACME renewal information

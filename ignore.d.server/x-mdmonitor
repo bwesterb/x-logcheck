@@ -1,2 +1,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: mdmonitor-oneshot.service: Deactivated
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Condition check resulted in MD array scrubbing - continuation being skipped
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sh\[[[:digit:]]+\]: mdadm: (DeviceDisappeared|NewArray|RebuildFinished) event detected on md device
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sh\[[[:digit:]]+\]: mdadm: (DeviceDisappeared|NewArray|RebuildFinished) event detected on md device
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: mdmonitor-oneshot.service: Deactivated
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Condition check resulted in MD array scrubbing - continuation being skipped
