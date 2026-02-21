@@ -1,3 +1,9 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? icmp6_send: no reply to icmp error$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: vif vif-[[:digit:]]+-[[:digit:]]+ [^:]+: Guest Rx (ready|stalled)$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ kernel: \[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\] vif vif-[[:digit:]]+-[[:digit:]]+ [^:]+: Guest Rx (ready|stalled)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\])? xen-blkback: backend/vbd/[[:digit:]]+/[[:digit:]]+:
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ kernel: \[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\] xen-blkback: backend/vbd/[[:digit:]]+/[[:digit:]]+:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\])? IPv6: ADDRCONF\(NETDEV_CHANGE\): vif[[:digit:]]+\.[[:digit:]]+: link becomes ready
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ kernel: \[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\] IPv6: ADDRCONF\(NETDEV_CHANGE\): vif[[:digit:]]+\.[[:digit:]]+: link becomes ready
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\])? audit: type=[[:digit:]]+ .*apparmor=
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ kernel: audit: type=[[:digit:]]+ .*apparmor=

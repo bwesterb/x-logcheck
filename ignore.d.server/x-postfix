@@ -38,4 +38,6 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: milter-reject: END-OF-MESSAGE from.*Try again later
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: removed \(canceled\)
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: [[:alnum:]]+: removed \(canceled\)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: NOQUEUE: timeout after CONNECT from
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: NOQUEUE: timeout after CONNECT from
 

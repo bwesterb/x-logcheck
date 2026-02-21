@@ -83,4 +83,13 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: userauth_pubkey: signature algorithm .* not in PubkeyAcceptedAlgorithms
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: Read error from remote host .* Connection timed out
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: pam_unix\(sshd:session\): session (opened|closed) for user
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: fatal: userauth_passwd: parse packet: invalid format \[preauth\]
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: fatal: userauth_passwd: parse packet: invalid format \[preauth\]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: padding error: need [[:digit:]]+ block [[:digit:]]+ mod [[:digit:]]+ \[preauth\]
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: padding error: need [[:digit:]]+ block [[:digit:]]+ mod [[:digit:]]+ \[preauth\]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: ssh_dispatch_run_fatal: Connection from [.:[:xdigit:]]+ port [[:digit:]]+: message authentication code incorrect \[preauth\]
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: ssh_dispatch_run_fatal: Connection from [.:[:xdigit:]]+ port [[:digit:]]+: message authentication code incorrect \[preauth\]
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: Accepted (gssapi(-with-mic|-keyex)?|rsa|dsa|password|publickey|keyboard-interactive/pam|hostbased) for [^[:space:]]+ from [^[:space:]]+ port [[:digit:]]+.*: RSA SHA256:
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: error: mm_reap: preauth child terminated by signal [[:digit:]]+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: error: mm_reap: preauth child terminated by signal [[:digit:]]+
 

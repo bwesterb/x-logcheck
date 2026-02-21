@@ -50,3 +50,13 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Closed GNOME Keyring daemon
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cups\.cups-browsed\[[[:digit:]]+\]: . true
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cups\.cups-browsed\[[[:digit:]]+\]: . sleep
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ wireplumber\[[[:digit:]]+\]: .* Could not open any dma-buf provider
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ wireplumber\[[[:digit:]]+\]: .* Could not open any dma-buf provider
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ wireplumber\[[[:digit:]]+\]: libcamera
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ wireplumber\[[[:digit:]]+\]: libcamera
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rtkit-daemon\[[[:digit:]]+\]: message repeated [[:digit:]]+ times
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ rtkit-daemon\[[[:digit:]]+\]: message repeated [[:digit:]]+ times
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ rtkit-daemon\[[[:digit:]]+\]: Supervising
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd-xdg-autostart-generator\[[[:digit:]]+\]:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:.*apparmor="DENIED".*cupsd
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ kernel: audit:.*apparmor="DENIED".*cupsd

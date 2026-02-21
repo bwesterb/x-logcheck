@@ -1,2 +1,4 @@
 ^\w{3} [ :[:digit:]]{11} serf smartd\[[[:digit:]]+\]: Device: /dev/sde.*1 Currently unreadable \(pending\) sectors
 ^\w{3} [ :[:digit:]]{11} serf smartd\[[[:digit:]]+\]: Device: /dev/sde.*1 Offline uncorrectable sectors
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ find\[[[:digit:]]+\]: removed '/var/log/atop/atop_[[:digit:]]+'
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ find\[[[:digit:]]+\]: removed '/var/log/atop/atop_[[:digit:]]+'

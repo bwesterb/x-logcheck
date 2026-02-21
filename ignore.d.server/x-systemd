@@ -119,3 +119,20 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Starting|Started) Session [c[:digit:]]+ of user [^[:space:]]+\.$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Reexecuting|Reloading)\.$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]:.*Succeeded\.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Reload requested from client PID
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Reload requested from client PID
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-sysv-generator\[[[:digit:]]+\]: SysV service .* lacks a native systemd unit file
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ (kernel: )?systemd-sysv-generator\[[[:digit:]]+\]: SysV service .* lacks a native systemd unit file
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: mpris-proxy.service .* was skipped because of an unmet condition
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: mpris-proxy.service .* was skipped because of an unmet condition
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: ubuntu-insights-collect.service: unit configures an IP firewall
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: ubuntu-insights-collect.service: unit configures an IP firewall
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: .* \(This warning is only shown for the first unit using IP firewalling\.\)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: .* \(This warning is only shown for the first unit using IP firewalling\.\)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ \(nin-node\)\[[[:digit:]]+\]: munin-node.service: Referenced but unset environment variable evaluates to an empty string: DAEMON_ARGS
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(nin-node\)\[[[:digit:]]+\]: munin-node.service: Referenced but unset environment variable evaluates to an empty string: DAEMON_ARGS
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-tmpfiles\[[[:digit:]]+\]: .* Duplicate line for path .*, ignoring.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ \(sd-pam\)(\[[[:digit:]]+\])?: pam_unix\(systemd-user:session\): session closed for user
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(sd-pam\): pam_unix\(systemd-user:session\): session closed for user
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ \(systemd\)(\[[[:digit:]]+\])?: pam_unix\(systemd-user:session\): session opened for user
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(systemd\): pam_unix\(systemd-user:session\): session opened for user

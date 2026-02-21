@@ -6,3 +6,7 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* tls: no cipher suite supported by both client and server
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* tls: first record does not look like a TLS handshake
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* tls: first record does not look like a TLS handshake
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* Updated landmark:
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* Updated landmark:
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* (read: connection reset by peer|EOF)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* (read: connection reset by peer|EOF)

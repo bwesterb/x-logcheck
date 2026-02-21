@@ -12,3 +12,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: dbus.service: Killing process [[:digit:]]+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: pipewire.service: Deactivated successfully
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus\[[[:digit:]]+\]: \[system\] Failed to activate service 'org.bluez': timed out
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: \[session uid=[[:digit:]]+ pid=[[:digit:]]+(| pidfd=[[:digit:]]+)\] AppArmor D-Bus mediation is enabled
