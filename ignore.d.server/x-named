@@ -1,4 +1,4 @@
-^\w{3} [ :[:igit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: lame server resolving
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: lame server resolving
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: timed out resolving
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: .*client [^ ]+ .* query .* denied
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client [^ ]+ .* zone transfer .* denied
