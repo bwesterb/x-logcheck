@@ -136,3 +136,5 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(sd-pam\): pam_unix\(systemd-user:session\): session closed for user
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ \(systemd\)(\[[[:digit:]]+\])?: pam_unix\(systemd-user:session\): session opened for user
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(systemd\): pam_unix\(systemd-user:session\): session opened for user
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [^ ]+ was skipped because of an unmet condition check \(ConditionPathExists=
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [^ ]+ was skipped because of an unmet condition check \(ConditionPathExists=

@@ -8,8 +8,8 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+got renewal info
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls\.cache\.maintenance.+updated and stored ACME renewal information
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls\.cache\.maintenance.+updated and stored ACME renewal information
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+http.+looking up info for HTTP challenge
-^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+http.+looking up info for HTTP challenge
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+looking up info for HTTP challenge
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+looking up info for HTTP challenge
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+http\.log\.access.+NOP
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+http\.log\.access.+NOP
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+http\.log\.error.+dial tcp [.:[:xdigit:]]+: connect: no route to host
