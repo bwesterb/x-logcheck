@@ -12,3 +12,5 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* (read: connection reset by peer|EOF)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* tls: client requested unsupported application protocols
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* tls: client requested unsupported application protocols
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* tls: peer doesn't support any of the certificate's signature algorithms
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* tls: peer doesn't support any of the certificate's signature algorithms

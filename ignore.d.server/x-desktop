@@ -60,3 +60,9 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd-xdg-autostart-generator\[[[:digit:]]+\]:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:.*apparmor="DENIED".*cupsd
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ kernel: audit:.*apparmor="DENIED".*cupsd
+# ubuntu-insights reports its collected data and warnings to the log
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ubuntu-insights\[[[:digit:]]+\]:
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ubuntu-insights\[[[:digit:]]+\]:
+# dbus-daemon AppArmor mediation notice at session start
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: \[session .*\] AppArmor D-Bus mediation is enabled
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: \[session .*\] AppArmor D-Bus mediation is enabled
