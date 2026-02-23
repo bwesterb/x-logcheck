@@ -13,4 +13,11 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (0x[[:xdigit:]]+: )?transfer of '[^']+' from [^:]+: Transfer completed: [[:digit:]]+ messages, [[:digit:]]+ records, [[:digit:]]+ bytes,
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (0x[[:xdigit:]]+: )?transfer of '[^']+' from [^:]+: Transfer completed: [[:digit:]]+ messages, [[:digit:]]+ records, [[:digit:]]+ bytes,
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: resolver priming query complete
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: _default: sending trust-anchor-telemetry query
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: _default: sending trust-anchor-telemetry query
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: managed-keys-zone: Key [[:digit:]]+ for zone [^ ]+ is now trusted
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: managed-keys-zone: Key [[:digit:]]+ for zone [^ ]+ is now trusted
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: success resolving .* after disabling qname minimization due to
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: success resolving .* after disabling qname minimization due to
+
 

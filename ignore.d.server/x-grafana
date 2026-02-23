@@ -3,3 +3,9 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ grafana(-server)?\[[0-9]+\]: .*(lvl|level)=info .*
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana(-server)?\[[0-9]+\]: logger="[^"]*" t=[^ ]+ level=error msg="Plugin app nav id not found"
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ grafana(-server)?\[[0-9]+\]: logger="[^"]*" t=[^ ]+ level=error msg="Plugin app nav id not found"
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana(-server)?\[[0-9]+\]: logger=[^ ]+ t=[^ ]+ level=error msg="Failed to get advisor usage stats"
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ grafana(-server)?\[[0-9]+\]: logger=[^ ]+ t=[^ ]+ level=error msg="Failed to get advisor usage stats"
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana(-server)?\[[0-9]+\]: logger=[^ ]+ t=[^ ]+ level=error msg="Failed to read all Amazon Prometheus data sources"
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ grafana(-server)?\[[0-9]+\]: logger=[^ ]+ t=[^ ]+ level=error msg="Failed to read all Amazon Prometheus data sources"
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana(-server)?\[[0-9]+\]: logger=[^ ]+ t=[^ ]+ level=error msg="Failed to fetch usage stats from provider"
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ grafana(-server)?\[[0-9]+\]: logger=[^ ]+ t=[^ ]+ level=error msg="Failed to fetch usage stats from provider"

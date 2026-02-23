@@ -55,6 +55,9 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ unix_chkpwd\[[[:digit:]]+\]: password check failed for user \(.*\)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: PAM [[:digit:]]+ more authentication failure
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: pam_unix\(sshd:auth\): (authentication failure|check pass); .*
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: pam_unix\(sshd:auth\): bad username \[.*\]$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: pam_unix\(sshd:auth\): bad username \[.*\]$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: PAM service\(sshd\) ignoring max retries; . > 3$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ unix_chkpwd\[[[:digit:]]+\]: password check failed for user \(.*\)
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: Connection closed by
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: error: kex_exchange_identification:
