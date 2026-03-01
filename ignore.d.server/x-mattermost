@@ -14,4 +14,3 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mattermost\[[[:digit:]]+\]: .*"msg":"SimpleWorker: job execution error".*"worker_name":"HostedPurchaseScreening"
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ mattermost\[[[:digit:]]+\]: .*"msg":"No notification data available"
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mattermost\[[[:digit:]]+\]: .*"msg":"No notification data available"
-

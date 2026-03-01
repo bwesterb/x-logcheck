@@ -99,4 +99,3 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: error: mm_reap: preauth child terminated by signal [[:digit:]]+
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: fatal: userauth_pubkey: parse publickey packet: incomplete message \[preauth\]$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: fatal: userauth_pubkey: parse publickey packet: incomplete message \[preauth\]$
-

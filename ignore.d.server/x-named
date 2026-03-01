@@ -37,6 +37,3 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rndc\[[[:digit:]]+\]: server reload successful$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client @[^ ]+ [^ ]+ \([^)]+\): bad zone transfer request: '[^']+': non-authoritative zone \(NOTAUTH\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client @[^ ]+ [^ ]+ \([^)]+\): bad zone transfer request: '[^']+': non-authoritative zone \(NOTAUTH\)$
-
-
-
