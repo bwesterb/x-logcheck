@@ -148,3 +148,7 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(systemd\): pam_unix\(systemd-user:session\): session opened for user
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [^ ]+ was skipped because of an unmet condition check \(ConditionPathExists=
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [^ ]+ was skipped because of an unmet condition check \(ConditionPathExists=
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ \(o-bridge\)(\[[[:digit:]]+\])?: pam_unix\(login:session\): session (opened|closed) for user
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(o-bridge\): pam_unix\(login:session\): session (opened|closed) for user
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ \(sd-pam\)(\[[[:digit:]]+\])?: pam_unix\(login:session\): session (opened|closed) for user
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(sd-pam\): pam_unix\(login:session\): session (opened|closed) for user
