@@ -18,3 +18,16 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+http\.handlers\.reverse_proxy.+aborting with incomplete response
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls.+storage cleaning happened too recently; skipping
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls.+storage cleaning happened too recently; skipping
+# ACME certificate renewal
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+(certificate is in configured renewal window|certificate expires soon; queuing for renewal|attempting certificate renewal)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+(certificate is in configured renewal window|certificate expires soon; queuing for renewal|attempting certificate renewal)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls\.renew.+(acquiring lock|lock acquired|renewing certificate|certificate renewed successfully|releasing lock)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls\.renew.+(acquiring lock|lock acquired|renewing certificate|certificate renewed successfully|releasing lock)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls\.issuance\.acme.+(waiting on internal rate limiter|done waiting on internal rate limiter|using ACME account)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls\.issuance\.acme.+(waiting on internal rate limiter|done waiting on internal rate limiter|using ACME account)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+(trying to solve challenge|authorization finalized|validations succeeded; finalizing order|successfully downloaded available certificate chains)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+(trying to solve challenge|authorization finalized|validations succeeded; finalizing order|successfully downloaded available certificate chains)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls.+(served key authentication certificate|reloading managed certificate)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls.+(served key authentication certificate|reloading managed certificate)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls\.cache.+replaced certificate in cache
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls\.cache.+replaced certificate in cache

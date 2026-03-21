@@ -13,3 +13,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: DHCPNAK
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: DHCPNAK
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: message repeated
+# dnsmasq startup/shutdown
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: (exiting on receipt of SIGTERM|started, version |compile time options: |DNSSEC validation enabled|configured with trust anchor for |using only locally-known addresses for |reading /etc/resolv|read /etc/hosts - )
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: (exiting on receipt of SIGTERM|started, version |compile time options: |DNSSEC validation enabled|configured with trust anchor for |using only locally-known addresses for |reading /etc/resolv|read /etc/hosts - )
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: (DHCP, (IP range|sockets bound exclusively)|DHCPv6 stateless |DHCPv4-derived |router advertisement |IPv6 router advertisement enabled|read /etc/ethers - )
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: (DHCP, (IP range|sockets bound exclusively)|DHCPv6 stateless |DHCPv4-derived |router advertisement |IPv6 router advertisement enabled|read /etc/ethers - )

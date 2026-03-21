@@ -13,3 +13,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: pipewire.service: Deactivated successfully
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus\[[[:digit:]]+\]: \[system\] Failed to activate service 'org.bluez': timed out
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: \[session uid=[[:digit:]]+ pid=[[:digit:]]+(| pidfd=[[:digit:]]+)\] AppArmor D-Bus mediation is enabled
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: \[system\] Activation via systemd failed for unit 'dbus-org.freedesktop.network1.service':
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: \[system\] Activation via systemd failed for unit 'dbus-org.freedesktop.network1.service':
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ resolvconf\[[[:digit:]]+\]: (Dropped protocol specifier|Failed to set DNS configuration: Unit dbus-org.freedesktop.network1.service)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ resolvconf\[[[:digit:]]+\]: (Dropped protocol specifier|Failed to set DNS configuration: Unit dbus-org.freedesktop.network1.service)
