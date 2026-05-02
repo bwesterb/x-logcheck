@@ -31,3 +31,5 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls.+(served key authentication certificate|reloading managed certificate)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls\.cache.+replaced certificate in cache
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls\.cache.+replaced certificate in cache
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls.+tls-alpn challenge.+\{"server_name": "", "error": "no information found to solve challenge for identifier: "\}
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: .+tls.+tls-alpn challenge.+\{"server_name": "", "error": "no information found to solve challenge for identifier: "\}
