@@ -128,11 +128,11 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Reload requested from client PID
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Reload requested from client PID
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-sysv-generator\[[[:digit:]]+\]: SysV service .* lacks a native systemd unit file
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-sysv-generator\[[[:digit:]]+\]: Please update package to include a native systemd unit file\.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-sysv-generator\[[[:digit:]]+\]: ! This compatibility logic is deprecated, expect removal soon\. !$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (kernel: )?systemd-sysv-generator\[[[:digit:]]+\]: Please update package to include a native systemd unit file\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (kernel: )?systemd-sysv-generator\[[[:digit:]]+\]: ! This compatibility logic is deprecated, expect removal soon\. !$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ (kernel: )?systemd-sysv-generator\[[[:digit:]]+\]: SysV service .* lacks a native systemd unit file
-^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd-sysv-generator\[[[:digit:]]+\]: Please update package to include a native systemd unit file\.$
-^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd-sysv-generator\[[[:digit:]]+\]: ! This compatibility logic is deprecated, expect removal soon\. !$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ (kernel: )?systemd-sysv-generator\[[[:digit:]]+\]: Please update package to include a native systemd unit file\.$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ (kernel: )?systemd-sysv-generator\[[[:digit:]]+\]: ! This compatibility logic is deprecated, expect removal soon\. !$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: mpris-proxy.service .* was skipped because of an unmet condition
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: mpris-proxy.service .* was skipped because of an unmet condition
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: ubuntu-insights-collect.service: unit configures an IP firewall
