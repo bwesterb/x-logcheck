@@ -51,6 +51,10 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Closed GNOME Keyring daemon
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cups\.cups-browsed\[[[:digit:]]+\]: . true
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cups\.cups-browsed\[[[:digit:]]+\]: . sleep
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ cups\.cups-browsed\[[[:digit:]]+\]: . true
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ cups\.cups-browsed\[[[:digit:]]+\]: . sleep
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (cups-browsed|cups\.cupsd|cups\.cups-browsed)\[[[:digit:]]+\]: WARNING: Unhandled message: interface=org\.freedesktop\.DBus
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ (cups-browsed|cups\.cupsd|cups\.cups-browsed)\[[[:digit:]]+\]: WARNING: Unhandled message: interface=org\.freedesktop\.DBus
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ wireplumber\[[[:digit:]]+\]: .* Could not open any dma-buf provider
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ wireplumber\[[[:digit:]]+\]: .* Could not open any dma-buf provider
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ wireplumber\[[[:digit:]]+\]: .*libcamera

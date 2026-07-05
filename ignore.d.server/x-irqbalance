@@ -1,0 +1,7 @@
+# irqbalance cannot write IRQ affinity where /proc/irq is read-only, e.g. on
+# virtualised guests or restricted hosts; it then marks the IRQ unmanaged.
+# Both messages are routine.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ irqbalance\[[[:digit:]]+\]: Cannot change IRQ [[:digit:]]+ affinity: Read-only file system$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ irqbalance\[[[:digit:]]+\]: Cannot change IRQ [[:digit:]]+ affinity: Read-only file system$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ irqbalance\[[[:digit:]]+\]: IRQ [[:digit:]]+ affinity is now unmanaged$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ irqbalance\[[[:digit:]]+\]: IRQ [[:digit:]]+ affinity is now unmanaged$

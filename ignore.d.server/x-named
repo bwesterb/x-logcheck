@@ -43,3 +43,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client @[^ ]+ [^ ]+ \([^)]+\): bad zone transfer request: '[^']+': non-authoritative zone \(NOTAUTH\)$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: socket 0x[[:xdigit:]]+: Accepting TCP connection failed: quota reached
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: socket 0x[[:xdigit:]]+: Accepting TCP connection failed: quota reached
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: DNS format error from [^ ]+ resolving [^ ]+ for [^:]+: server sent FORMERR with echoed DNS COOKIE$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: DNS format error from [^ ]+ resolving [^ ]+ for [^:]+: server sent FORMERR with echoed DNS COOKIE$
