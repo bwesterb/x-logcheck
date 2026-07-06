@@ -9,3 +9,4 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: snap\.[^:]+: Main process exited, code=exited, status=1/FAILURE
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: snap\.[^:]+: Failed with result 'exit-code'.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ [^[:space:]]+\[[[:digit:]]+\]: error: cannot find installed snap
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ snapd\[[0-9]+\]: storehelpers.go:[0-9]+: cannot refresh( snap.*|): snap has no updates available

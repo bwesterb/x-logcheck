@@ -71,3 +71,11 @@
 # dbus-daemon AppArmor mediation notice at session start
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: \[session .*\] AppArmor D-Bus mediation is enabled
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: \[session .*\] AppArmor D-Bus mediation is enabled
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ whoopsie\[[[:digit:]]+\]: \[[0-9:]+\] (Using lock path|Looking for \.upload files|Found \.crash corresponding to \.upload|Crash already uploaded, skipping)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ whoopsie\[[[:digit:]]+\]: \[[0-9:]+\] (Using lock path|Looking for \.upload files|Found \.crash corresponding to \.upload|Crash already uploaded, skipping)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ im-config\[[[:digit:]]+\]: (@ IM_CONFIG_ENTRY=|  GTK_IM_MODULE=|  Set IM_CONFIG_CURRENT_DESKTOP )
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ im-config\[[[:digit:]]+\]: (@ IM_CONFIG_ENTRY=|  GTK_IM_MODULE=|  Set IM_CONFIG_CURRENT_DESKTOP )
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rtkit-daemon\[[[:digit:]]+\]: Handling system-suspend using logind\.$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ rtkit-daemon\[[[:digit:]]+\]: Handling system-suspend using logind\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-user-runtime-dir\[[[:digit:]]+\]: Successfully configured disk quota for UID [[:digit:]]+ on 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd-user-runtime-dir\[[[:digit:]]+\]: Successfully configured disk quota for UID [[:digit:]]+ on 

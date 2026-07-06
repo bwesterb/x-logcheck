@@ -107,3 +107,5 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Received signal 15; terminating\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: fatal: userauth_finish: send failure packet: Connection reset by peer \[preauth\]$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: fatal: userauth_finish: send failure packet: Connection reset by peer \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: srclimit_penalise: [0-9a-fA-F.:]+/[[:digit:]]+: activating ipv[46] penalty of [[:digit:]]+ seconds for penalty: .+$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: srclimit_penalise: [0-9a-fA-F.:]+/[[:digit:]]+: activating ipv[46] penalty of [[:digit:]]+ seconds for penalty: .+$

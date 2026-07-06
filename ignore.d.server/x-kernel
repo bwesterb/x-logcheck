@@ -9,3 +9,5 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ kernel: TCP: request_sock_TCPv6: Possible SYN flooding on port .*
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\])? TCP: request_sock_TCPv6: Possible SYN flooding on port .*
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ kernel: audit: type=[[:digit:]]+ .*apparmor=
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\])? perf: interrupt took too long \([[:digit:]]+ > [[:digit:]]+\), lowering kernel\.perf_event_max_sample_rate to [[:digit:]]+$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ kernel: (\[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\] )?perf: interrupt took too long \([[:digit:]]+ > [[:digit:]]+\), lowering kernel\.perf_event_max_sample_rate to [[:digit:]]+$
