@@ -10,3 +10,13 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: snap\.[^:]+: Failed with result 'exit-code'.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ [^[:space:]]+\[[[:digit:]]+\]: error: cannot find installed snap
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ snapd\[[0-9]+\]: storehelpers.go:[0-9]+: cannot refresh( snap.*|): snap has no updates available
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ snapd\[[0-9]+\]: cache\.go:[0-9]+: removed [0-9]+ entries/ *[0-9]+ from downloads cache$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ snapd\[[0-9]+\]: cache\.go:[0-9]+: removed [0-9]+ entries/ *[0-9]+ from downloads cache$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ snapd\[[0-9]+\]: snapmgr\.go:[0-9]+: performing periodic snap downloads cache cleanup$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ snapd\[[0-9]+\]: snapmgr\.go:[0-9]+: performing periodic snap downloads cache cleanup$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ snapd\[[0-9]+\]: spec\.go:[0-9]+: renaming mount entry for directory ".*" to ".*" to avoid a clash$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ snapd\[[0-9]+\]: spec\.go:[0-9]+: renaming mount entry for directory ".*" to ".*" to avoid a clash$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ snapd\[[0-9]+\]: backend\.go:[0-9]+: reloading profiles of snap-confine provided by the system snap$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ snapd\[[0-9]+\]: backend\.go:[0-9]+: reloading profiles of snap-confine provided by the system snap$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Mounting|Mounted) snap-[^ ]+\.mount - Mount unit for 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Mounting|Mounted) snap-[^ ]+\.mount - Mount unit for 

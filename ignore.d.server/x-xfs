@@ -1,0 +1,5 @@
+# xfs_scrub_all Python deprecation warning (datetime.utcnow) on the weekly scrub timer
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ xfs_scrub_all\[[[:digit:]]+\]: /usr/sbin/xfs_scrub_all:[[:digit:]]+: DeprecationWarning: datetime\.datetime\.utcnow\(\) is deprecated
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ xfs_scrub_all\[[[:digit:]]+\]: /usr/sbin/xfs_scrub_all:[[:digit:]]+: DeprecationWarning: datetime\.datetime\.utcnow\(\) is deprecated
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ xfs_scrub_all\[[[:digit:]]+\]:   dt = datetime\.utcnow\(\)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ xfs_scrub_all\[[[:digit:]]+\]:   dt = datetime\.utcnow\(\)$

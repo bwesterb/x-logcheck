@@ -15,3 +15,5 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: transmission-daemon.service: Consumed
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: transmission-daemon.service: Scheduled restart job
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ transmission-daemon\[[[:digit:]]+\]: .*UDP Failed to set (send|receive) buffer
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ transmission-daemon\[[[:digit:]]+\]: \[[^]]+\] ERR utils\.cc:[[:digit:]]+ Couldn't read '[^']+': No such file or directory
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ transmission-daemon\[[[:digit:]]+\]: \[[^]]+\] ERR utils\.cc:[[:digit:]]+ Couldn't read '[^']+': No such file or directory

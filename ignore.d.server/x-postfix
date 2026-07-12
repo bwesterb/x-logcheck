@@ -41,3 +41,36 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/lmtp\[[[:digit:]]+\]: [[:alnum:]]+: breaking line > [[:digit:]]+ bytes with <CR><LF>SPACE$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [0-9A-F]{6,}: lost connection after (DATA|RCPT|END-OF-MESSAGE) from 
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [0-9A-F]{6,}: lost connection after (DATA|RCPT|END-OF-MESSAGE) from 
+# postfix wrapper: package-upgrade / compatibility-level chatter, timezone & nss copy on start
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: /usr/sbin/postconf: warning: .* will be removed; instead, specify
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: /usr/sbin/postconf: warning: .* will be removed; instead, specify
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: (postfix: )?Postfix is using backwards-compatible default settings$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: (postfix: )?Postfix is using backwards-compatible default settings$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: (postfix: )?See https://www\.postfix\.org/COMPATIBILITY_README\.html for details$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: (postfix: )?See https://www\.postfix\.org/COMPATIBILITY_README\.html for details$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: (postfix: )?To disable backwards compatibility use "postconf compatibility_level=3\.6" and "postfix reload"$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: (postfix: )?To disable backwards compatibility use "postconf compatibility_level=3\.6" and "postfix reload"$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: (postfix/postlog: )?stopping the Postfix mail system$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: (postfix/postlog: )?stopping the Postfix mail system$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: updating /etc/localtime => /var/spool/postfix//etc/localtime$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: updating /etc/localtime => /var/spool/postfix//etc/localtime$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: '/usr/lib/[^']+' -> 'lib/[^']+'$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: '/usr/lib/[^']+' -> 'lib/[^']+'$
+# postfix master / postfix-script lifecycle, postsuper queue cleanup
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/master\[[[:digit:]]+\]: daemon started -- version .*, configuration /etc/postfix$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/master\[[[:digit:]]+\]: daemon started -- version .*, configuration /etc/postfix$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/master\[[[:digit:]]+\]: terminating on signal [[:digit:]]+$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/master\[[[:digit:]]+\]: terminating on signal [[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/postfix-script\[[[:digit:]]+\]: stopping the Postfix mail system$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/postfix-script\[[[:digit:]]+\]: stopping the Postfix mail system$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/postsuper\[[[:digit:]]+\]: [0-9A-F]+: removed$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/postsuper\[[[:digit:]]+\]: [0-9A-F]+: removed$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/postsuper\[[[:digit:]]+\]: fatal: invalid directory name: [0-9A-F]+$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/postsuper\[[[:digit:]]+\]: fatal: invalid directory name: [0-9A-F]+$
+# smtpd scanner timeouts / aborted transactions
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: NOQUEUE: timeout after (STARTTLS|AUTH) from 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: NOQUEUE: timeout after (STARTTLS|AUTH) from 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [0-9A-F]{6,}: timeout after (DATA|BDAT) \([[:digit:]]+ bytes\) from 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [0-9A-F]{6,}: timeout after (DATA|BDAT) \([[:digit:]]+ bytes\) from 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [0-9A-F]{6,}: lost connection after (DATA|BDAT) \([[:digit:]]+ bytes\) from 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [0-9A-F]{6,}: lost connection after (DATA|BDAT) \([[:digit:]]+ bytes\) from 

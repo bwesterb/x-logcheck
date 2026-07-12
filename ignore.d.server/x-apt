@@ -1,0 +1,3 @@
+# apt.systemd.daily conffile backup: tar warns about files removed on package upgrade
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ apt.systemd.daily\[[[:digit:]]+\]: tar: (Exiting with failure status due to previous errors|\.remove-on-upgrade .* Not found in archive)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ apt.systemd.daily\[[[:digit:]]+\]: tar: (Exiting with failure status due to previous errors|\.remove-on-upgrade .* Not found in archive)$

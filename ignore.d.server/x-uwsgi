@@ -1,1 +1,2 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ uwsgi\[[[:digit:]]+\]:
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ uwsgi\[[[:digit:]]+\]: 

@@ -129,10 +129,10 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Reload requested from client PID
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-sysv-generator\[[[:digit:]]+\]: SysV service .* lacks a native systemd unit file
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (kernel: )?systemd-sysv-generator\[[[:digit:]]+\]: Please update package to include a native systemd unit file\.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (kernel: )?systemd-sysv-generator\[[[:digit:]]+\]: ! This compatibility logic is deprecated, expect removal soon\. !$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ (kernel: )?systemd-sysv-generator\[[[:digit:]]+\]: .+ This compatibility logic is deprecated, expect removal soon\. .+$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ (kernel: )?systemd-sysv-generator\[[[:digit:]]+\]: SysV service .* lacks a native systemd unit file
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ (kernel: )?systemd-sysv-generator\[[[:digit:]]+\]: Please update package to include a native systemd unit file\.$
-^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ (kernel: )?systemd-sysv-generator\[[[:digit:]]+\]: ! This compatibility logic is deprecated, expect removal soon\. !$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ (kernel: )?systemd-sysv-generator\[[[:digit:]]+\]: .+ This compatibility logic is deprecated, expect removal soon\. .+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: mpris-proxy.service .* was skipped because of an unmet condition
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: mpris-proxy.service .* was skipped because of an unmet condition
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: ubuntu-insights-collect.service: unit configures an IP firewall
@@ -162,8 +162,8 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(o-bridge\): pam_unix\(login:session\): session (opened|closed) for user
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ \(sd-pam\)(\[[[:digit:]]+\])?: pam_unix\(login:session\): session (opened|closed) for user
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(sd-pam\): pam_unix\(login:session\): session (opened|closed) for user
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [^ ]+: Consumed [^ ]+ CPU time
-^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [^ ]+: Consumed [^ ]+ CPU time
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [^ ]+: Consumed .+ CPU time
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [^ ]+: Consumed .+ CPU time
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: munin-node\.service: Consumed 
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: munin-node\.service: Consumed 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: /usr/lib/systemd/user/spice-vdagent\.service:[[:digit:]]+: Unknown key 'StandardError' in section \[Install\], ignoring\.$
@@ -173,3 +173,13 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [^ ]+ - .+ skipped, unmet condition check Condition[[:alpha:]]+=
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [^ ]+ - .+ skipped, unmet condition check Condition[[:alpha:]]+=
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: apt-daily(-upgrade)?.service: Consumed
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: sshd-vsock\.socket: Socket unit configuration has changed while unit has been running,
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: sshd-vsock\.socket: Socket unit configuration has changed while unit has been running,
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemctl\[[[:digit:]]+\]: Warning: The unit file, source configuration file or drop-ins of .* changed on disk\. Run 'systemctl daemon-reload' to reload units\.$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemctl\[[[:digit:]]+\]: Warning: The unit file, source configuration file or drop-ins of .* changed on disk\. Run 'systemctl daemon-reload' to reload units\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-ssh-generator\[[[:digit:]]+\]: Failed to query local AF_VSOCK CID: Cannot assign requested address$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd-ssh-generator\[[[:digit:]]+\]: Failed to query local AF_VSOCK CID: Cannot assign requested address$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ \(sd-exec-\[[[:digit:]]+\]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1\.$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(sd-exec-\[[[:digit:]]+\]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Reloading|Reloaded) [^ ]+\.service - 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Reloading|Reloaded) [^ ]+\.service - 
