@@ -65,3 +65,19 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: DNS format error from [^ ]+ resolving [^ ]+ for [^:]+: invalid response$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: increase from [[:digit:]]+ to [[:digit:]]+ RRL entries with [[:digit:]]+ bins; average search length [[:digit:].]+$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: increase from [[:digit:]]+ to [[:digit:]]+ RRL entries with [[:digit:]]+ bins; average search length [[:digit:].]+$
+# routine authoritative NOTIFY to secondaries from our hidden primary
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: zone [^ ]+/IN: sending notify\(SOA\) to [.:[:xdigit:]]+#[[:digit:]]+$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: zone [^ ]+/IN: sending notify\(SOA\) to [.:[:xdigit:]]+#[[:digit:]]+$
+# recursive resolution hitting truncation/EOF from an upstream nameserver
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: end of file resolving '[^']+': [.:[:xdigit:]]+#[[:digit:]]+$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: end of file resolving '[^']+': [.:[:xdigit:]]+#[[:digit:]]+$
+# per-name cache record-count cap reached (informational)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: error adding '[^']+' in '\./IN' \(cache\): too many records \(must not exceed [[:digit:]]+\)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: error adding '[^']+' in '\./IN' \(cache\): too many records \(must not exceed [[:digit:]]+\)$
+# named (re)load bookkeeping
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (configuring command channel from |parsing user configuration from |received control channel command 'reload )
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (configuring command channel from |parsing user configuration from |received control channel command 'reload )
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: [[:digit:]]+: 'max-cache-size [[:digit:]]+%' - setting to [[:digit:]]+MB
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: [[:digit:]]+: 'max-cache-size [[:digit:]]+%' - setting to [[:digit:]]+MB
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: [[:digit:]]{1,2}-[[:alpha:]]{3}-[[:digit:]]{4} [[:digit:]:.]+ connected to notification socket
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: [[:digit:]]{1,2}-[[:alpha:]]{3}-[[:digit:]]{4} [[:digit:]:.]+ connected to notification socket

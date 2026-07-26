@@ -22,3 +22,5 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: Failed to render template: http2: request body closed due to handler exiting$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* (local error: tls: error decoding message|remote error: tls: unexpected message)$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* (local error: tls: error decoding message|remote error: tls: unexpected message)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* local error: tls: bad record MAC$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* local error: tls: bad record MAC$

@@ -74,3 +74,13 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [0-9A-F]{6,}: timeout after (DATA|BDAT) \([[:digit:]]+ bytes\) from 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [0-9A-F]{6,}: lost connection after (DATA|BDAT) \([[:digit:]]+ bytes\) from 
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [0-9A-F]{6,}: lost connection after (DATA|BDAT) \([[:digit:]]+ bytes\) from 
+# postfix reload ("refreshing the mail system")
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: (postfix/postlog: )?refreshing the Postfix mail system$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: (postfix/postlog: )?refreshing the Postfix mail system$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/postfix-script\[[[:digit:]]+\]: refreshing the Postfix mail system$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/postfix-script\[[[:digit:]]+\]: refreshing the Postfix mail system$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/master\[[[:digit:]]+\]: reload -- version .*, configuration /etc/postfix$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/master\[[[:digit:]]+\]: reload -- version .*, configuration /etc/postfix$
+# scanner drops a queued transaction after UNKNOWN/other verbs (queue-id form)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [0-9A-F]{6,}: lost connection after (UNKNOWN|CONNECT|STARTTLS|HELP|AUTH|EHLO|HELO|RSET) from 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [0-9A-F]{6,}: lost connection after (UNKNOWN|CONNECT|STARTTLS|HELP|AUTH|EHLO|HELO|RSET) from 

@@ -1,2 +1,5 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ find\[[[:digit:]]+\]: removed '/var/log/atop/atop_[[:digit:]]+'
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ find\[[[:digit:]]+\]: removed '/var/log/atop/atop_[[:digit:]]+'
+# systemd-tmpfiles-clean can't lock plugin/socket files on a special fs (benign)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-tmpfiles\[[[:digit:]]+\]: Opening file "[^"]*" failed, proceeding without lock: No such device or address$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd-tmpfiles\[[[:digit:]]+\]: Opening file "[^"]*" failed, proceeding without lock: No such device or address$

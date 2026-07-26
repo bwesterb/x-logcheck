@@ -3,3 +3,6 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ xfs_scrub_all\[[[:digit:]]+\]: /usr/sbin/xfs_scrub_all:[[:digit:]]+: DeprecationWarning: datetime\.datetime\.utcnow\(\) is deprecated
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ xfs_scrub_all\[[[:digit:]]+\]:   dt = datetime\.utcnow\(\)$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ xfs_scrub_all\[[[:digit:]]+\]:   dt = datetime\.utcnow\(\)$
+# routine xfs online scrub enabling file-data scrub
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ xfs_scrub_all\[[[:digit:]]+\]: Automatically enabling file data scrub\.$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ xfs_scrub_all\[[[:digit:]]+\]: Automatically enabling file data scrub\.$

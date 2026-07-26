@@ -47,3 +47,13 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: [[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2} [[:digit:]:.]+.*http\.log\.error.*unexpected EOF
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: \{"level":"info","ts":[[:digit:].]+,"msg":"Unsolicited response received on idle HTTP channel
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: \{"level":"info","ts":[[:digit:].]+,"msg":"Unsolicited response received on idle HTTP channel
+# ACME challenge chatter in caddy's console/text log format (logger=http),
+# tab+ANSI-coloured or space-separated variant of the tls.issuance.acme rules above
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: [[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2} [[:digit:]:.]+.*(waiting on internal rate limiter|done waiting on internal rate limiter|using ACME account|served key authentication)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: [[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2} [[:digit:]:.]+.*(waiting on internal rate limiter|done waiting on internal rate limiter|using ACME account|served key authentication)
+# reverse-proxy backend resets the connection on bot junk requests (502)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: [[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2} [[:digit:]:.]+.*http\.log\.error.*read: connection reset by peer
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: [[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2} [[:digit:]:.]+.*http\.log\.error.*read: connection reset by peer
+# benign OCSP-stapling warning for certs whose CA advertises no OCSP responder
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: [[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2} [[:digit:]:.]+.*stapling OCSP.*no OCSP server specified in certificate
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ caddy\[[[:digit:]]+\]: [[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2} [[:digit:]:.]+.*stapling OCSP.*no OCSP server specified in certificate

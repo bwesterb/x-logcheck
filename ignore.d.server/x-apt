@@ -1,3 +1,6 @@
 # apt.systemd.daily conffile backup: tar warns about files removed on package upgrade
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ apt.systemd.daily\[[[:digit:]]+\]: tar: (Exiting with failure status due to previous errors|\.remove-on-upgrade .* Not found in archive)$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ apt.systemd.daily\[[[:digit:]]+\]: tar: (Exiting with failure status due to previous errors|\.remove-on-upgrade .* Not found in archive)$
+# package postinst re-ensuring the syslog system user on rsyslog upgrade
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ adduser\[[[:digit:]]+\]: (The system user `syslog' already exists\. Exiting\.|The user `syslog' is already a member of `adm'\.)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ adduser\[[[:digit:]]+\]: (The system user `syslog' already exists\. Exiting\.|The user `syslog' is already a member of `adm'\.)$

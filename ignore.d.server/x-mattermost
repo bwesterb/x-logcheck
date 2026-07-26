@@ -14,3 +14,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mattermost\[[[:digit:]]+\]: .*"msg":"SimpleWorker: job execution error".*"worker_name":"HostedPurchaseScreening"
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ mattermost\[[[:digit:]]+\]: .*"msg":"No notification data available"
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mattermost\[[[:digit:]]+\]: .*"msg":"No notification data available"
+# transient go-sql-driver reconnect noise while mariadb restarts for the nightly backup
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mattermost\[[[:digit:]]+\]: \[mysql\] [[:digit:]/]+ [[:digit:]:]+ (packets|connection)\.go:[[:digit:]]+: (closing bad idle connection: EOF|driver: bad connection|bad connection)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ mattermost\[[[:digit:]]+\]: \[mysql\] [[:digit:]/]+ [[:digit:]:]+ (packets|connection)\.go:[[:digit:]]+: (closing bad idle connection: EOF|driver: bad connection|bad connection)$

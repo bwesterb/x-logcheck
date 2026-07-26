@@ -23,3 +23,6 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ kernel:( \[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\])?  exe="[^"]+" sauid=[[:digit:]]+ hostname=[^ ]* addr=[^ ]* terminal=[^ ]*'$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\])? message repeated [[:digit:]]+ times: \[ TCP: request_sock_TCP(v6)?: Possible SYN flooding on port .*\]$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ kernel: (\[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\] )?message repeated [[:digit:]]+ times: \[ TCP: request_sock_TCP(v6)?: Possible SYN flooding on port .*\]$
+# monthly RAID scrub kernel messages
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\])? md: (check of RAID array md[[:digit:]]+|md[[:digit:]]+: check done\.)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ kernel: (\[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\] )?md: (check of RAID array md[[:digit:]]+|md[[:digit:]]+: check done\.)$

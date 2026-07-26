@@ -79,3 +79,11 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ rtkit-daemon\[[[:digit:]]+\]: Handling system-suspend using logind\.$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-user-runtime-dir\[[[:digit:]]+\]: Successfully configured disk quota for UID [[:digit:]]+ on 
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd-user-runtime-dir\[[[:digit:]]+\]: Successfully configured disk quota for UID [[:digit:]]+ on 
+# wireplumber audio session manager crashes/asserts on this GUI box (benign desktop noise)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: wireplumber\.service: (Main process exited, code=dumped, status=[[:digit:]]+/ABRT|Failed with result 'core-dump'\.)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: wireplumber\.service: (Main process exited, code=dumped, status=[[:digit:]]+/ABRT|Failed with result 'core-dump'\.)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ wireplumber\[[[:digit:]]+\]: (\*\*$|(Bail out! )?GLib-GObject:ERROR:.*invalid_closure_notify)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ wireplumber\[[[:digit:]]+\]: (\*\*$|(Bail out! )?GLib-GObject:ERROR:.*invalid_closure_notify)
+# accounts-daemon startup banner
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ accounts-daemon\[[[:digit:]]+\]: started daemon version 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ accounts-daemon\[[[:digit:]]+\]: started daemon version 

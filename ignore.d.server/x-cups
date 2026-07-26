@@ -1,0 +1,6 @@
+# snap-packaged CUPS on the desktop: its refresh wrapper runs the daemon start/
+# stop scripts with `set -x`, dumping the whole shell trace plus exec/lifecycle
+# chatter. All benign desktop-printing noise; a genuine crash still surfaces via
+# systemd (snap.cups.*.service: Main process exited / dumped), which stays visible.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cups\.(cupsd|cups-browsed)\[[[:digit:]]+\]: (\+( |$)|==> |exec( |$)|echo( |$)|cat( |$)|Terminated$| )
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ cups\.(cupsd|cups-browsed)\[[[:digit:]]+\]: (\+( |$)|==> |exec( |$)|echo( |$)|cat( |$)|Terminated$| )

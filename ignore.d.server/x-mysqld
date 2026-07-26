@@ -3,3 +3,15 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ mariadbd\[[[:digit:]]+\]: .*Aborted connection .*Got (an error|timeout) reading communication packets
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mariadbd\[[[:digit:]]+\]: .*Access denied for user .* \(using password: YES\)
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ mariadbd\[[[:digit:]]+\]: .*Access denied for user .* \(using password: YES\)
+# nightly-backup / package-upgrade restart: informational [Note] lines
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mariadbd\[[[:digit:]]+\]: [[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2} +[[:digit:]:]+ [[:digit:]]+ \[Note\] 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ mariadbd\[[[:digit:]]+\]: [[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2} +[[:digit:]:]+ [[:digit:]]+ \[Note\] 
+# debian-start table checks on service start
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ /etc/mysql/debian-start\[[[:digit:]]+\]: (Upgrading MariaDB tables if necessary\.|/usr/bin/mariadb-upgrade: the '--basedir' option is always ignored|Checking for insecure root accounts\.|Triggering myisam-recover for all MyISAM tables and aria-recover for all Aria tables)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ /etc/mysql/debian-start\[[[:digit:]]+\]: (Upgrading MariaDB tables if necessary\.|/usr/bin/mariadb-upgrade: the '--basedir' option is always ignored|Checking for insecure root accounts\.|Triggering myisam-recover for all MyISAM tables and aria-recover for all Aria tables)$
+# mariadb-server postinst chatter on package reconfigure
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mariadb-server\.postinst\[[[:digit:]]+\]: (mysql\.user table already exists!|Run mariadb-upgrade, not mariadb-install-db)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ mariadb-server\.postinst\[[[:digit:]]+\]: (mysql\.user table already exists!|Run mariadb-upgrade, not mariadb-install-db)$
+# harmless unset-env warning from the service wrapper at start
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ \(mariadbd\)\[[[:digit:]]+\]: mariadb\.service: Referenced but unset environment variable evaluates to an empty string: MYSQLD_OPTS, _WSREP_NEW_CLUSTER$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(mariadbd\)\[[[:digit:]]+\]: mariadb\.service: Referenced but unset environment variable evaluates to an empty string: MYSQLD_OPTS, _WSREP_NEW_CLUSTER$

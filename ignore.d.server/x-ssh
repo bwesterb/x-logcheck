@@ -114,3 +114,8 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: error: send_error: write:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: PerSourcePenalties logging rate-limited: additional [[:digit:]]+ connections dropped$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: PerSourcePenalties logging rate-limited: additional [[:digit:]]+ connections dropped$
+# bot connection corrupted mid-auth (ISO variant; old-format already covered above)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: ssh_dispatch_run_fatal: Connection from .* corrupted
+# client offered a malformed public key
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: error: userauth_pubkey: parse key: Invalid key length \[preauth\]$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: error: userauth_pubkey: parse key: Invalid key length \[preauth\]$
