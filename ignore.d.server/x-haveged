@@ -1,0 +1,6 @@
+# entropy daemon start/stop banner and its self-test output
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ haveged\[[[:digit:]]+\]: (haveged starting up$|(haveged: )?(command socket is listening at fd [[:digit:]]+$|ver: |cpu: |tot tests\(BA8\): |fills: [[:digit:]]+, generated: |Stopping due to signal [[:digit:]]+$))
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ haveged\[[[:digit:]]+\]: (haveged starting up$|(haveged: )?(command socket is listening at fd [[:digit:]]+$|ver: |cpu: |tot tests\(BA8\): |fills: [[:digit:]]+, generated: |Stopping due to signal [[:digit:]]+$))
+# harmless unset-env warning from the service wrapper at start
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ \(haveged\)\[[[:digit:]]+\]: haveged\.service: Referenced but unset environment variable evaluates to an empty string: DAEMON_ARGS$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(haveged\)\[[[:digit:]]+\]: haveged\.service: Referenced but unset environment variable evaluates to an empty string: DAEMON_ARGS$

@@ -1,1 +1,12 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ntpd\[[[:digit:]]+\]: PROTO: .+ (un)?link local addr
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ntpd\[[[:digit:]]+\]: PROTO: .+ (un)?link local addr
+# ntpsec start-up banner: config parsing, socket binding and pool DNS
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ntpd\[[[:digit:]]+\]: (INIT|IO|CONFIG|NTSc|DNS): 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ntpd\[[[:digit:]]+\]: (INIT|IO|CONFIG|NTSc|DNS): 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ntpd\[[[:digit:]]+\]: ERR: ntpd exiting on signal [[:digit:]]+ \([[:alpha:]]+\)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ntpd\[[[:digit:]]+\]: ERR: ntpd exiting on signal [[:digit:]]+ \([[:alpha:]]+\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ntpd\[[[:digit:]]+\]: CLOCK: (kernel reports TIME_ERROR: 0x[[:xdigit:]]+: Clock Unsynchronized$|leapsecond file \('[^']*'\): |time stepped by [[:digit:].]+$)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ntpd\[[[:digit:]]+\]: CLOCK: (kernel reports TIME_ERROR: 0x[[:xdigit:]]+: Clock Unsynchronized$|leapsecond file \('[^']*'\): |time stepped by [[:digit:].]+$)
+# the systemd wrapper re-logs ntpd's own start-up lines
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ntp-systemd-wrapper\[[[:digit:]]+\]: [[:digit:]-]{10}T[[:digit:]:]+ ntpd\[[[:digit:]]+\]: INIT: 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ntp-systemd-wrapper\[[[:digit:]]+\]: [[:digit:]-]{10}T[[:digit:]:]+ ntpd\[[[:digit:]]+\]: INIT: 

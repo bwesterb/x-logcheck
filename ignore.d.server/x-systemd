@@ -189,3 +189,34 @@
 # sshd session/auth helper briefly outlives the ssh unit on stop (cgroup cleanup note)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: ssh\.service: Unit process [[:digit:]]+ \((sshd-session|sshd-auth)\) remains running after unit stopped\.$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: ssh\.service: Unit process [[:digit:]]+ \((sshd-session|sshd-auth)\) remains running after unit stopped\.$
+# boot/shutdown lifecycle: mounts, swap, devices and automounts
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Mounting|Mounted|Unmounting|Unmounted) [^ ]+\.mount - 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Mounting|Mounted|Unmounting|Unmounted) [^ ]+\.mount - 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Activating|Activated|Deactivating|Deactivated) swap [^ ]+\.swap - 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Activating|Activated|Deactivating|Deactivated) swap [^ ]+\.swap - 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Found|Expecting) device [^ ]+\.device - 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Found|Expecting) device [^ ]+\.device - 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Set up|Unset) automount [^ ]+\.automount - 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (Set up|Unset) automount [^ ]+\.automount - 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [^ ]+\.automount: Got automount request for 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [^ ]+\.automount: Got automount request for 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: tmp\.mount: Directory /tmp to mount over is not empty, mounting anyway\.$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: tmp\.mount: Directory /tmp to mount over is not empty, mounting anyway\.$
+# manager start-up banner and shutdown notice
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (systemd [[:digit:]]+[^ ]* running in system mode|Detected (virtualization|architecture) |Hostname set to <[._[:alnum:]-]+>\.$|Inserted module '[[:alnum:]_]+'$|bpf-restrict-fs: |System is tainted: |Shutting down\.$)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: (systemd [[:digit:]]+[^ ]* running in system mode|Detected (virtualization|architecture) |Hostname set to <[._[:alnum:]-]+>\.$|Inserted module '[[:alnum:]_]+'$|bpf-restrict-fs: |System is tainted: |Shutting down\.$)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Received SIGRTMIN\+[[:digit:]]+ from PID [[:digit:]]+ \([^)]*\)\.$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Received SIGRTMIN\+[[:digit:]]+ from PID [[:digit:]]+ \([^)]*\)\.$
+# mailman3 writes its pid file a moment after forking; systemd retries and wins
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: mailman3\.service: Can't open PID file '/run/mailman3/master\.pid' \(yet\?\) after start: No such file or directory$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: mailman3\.service: Can't open PID file '/run/mailman3/master\.pid' \(yet\?\) after start: No such file or directory$
+# journald rotating/flushing its journals across a reboot
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-journald\[[[:digit:]]+\]: (Journal (started|stopped)$|Collecting audit messages is disabled\.$|Received client request to flush runtime journal\.$|Received SIGTERM from PID [[:digit:]]+ \([^)]*\)\.$|(Runtime|System) Journal \(/[^)]+\) is |Time spent on flushing to /[^ ]+ is )
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd-journald\[[[:digit:]]+\]: (Journal (started|stopped)$|Collecting audit messages is disabled\.$|Received client request to flush runtime journal\.$|Received SIGTERM from PID [[:digit:]]+ \([^)]*\)\.$|(Runtime|System) Journal \(/[^)]+\) is |Time spent on flushing to /[^ ]+ is )
+# seat/udev/shutdown chatter around a reboot; the reboot itself stays visible
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-logind\[[[:digit:]]+\]: New seat [[:alnum:]]+\.$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd-logind\[[[:digit:]]+\]: New seat [[:alnum:]]+\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-shutdown\[[[:digit:]]+\]: (Syncing filesystems and block devices\.$|Sending SIGTERM to remaining processes\.\.\.$)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd-shutdown\[[[:digit:]]+\]: (Syncing filesystems and block devices\.$|Sending SIGTERM to remaining processes\.\.\.$)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-udevd\[[[:digit:]]+\]: Using default interface naming scheme '[^']*'\.$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd-udevd\[[[:digit:]]+\]: Using default interface naming scheme '[^']*'\.$

@@ -1,0 +1,3 @@
+# start/stop lifecycle; the missing pid file is normal when it was not running
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ stunnel4\[[[:digit:]]+\]: (Starting TLS tunnels:$|Stopping TLS tunnels: .*no pid file$)
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ stunnel4\[[[:digit:]]+\]: (Starting TLS tunnels:$|Stopping TLS tunnels: .*no pid file$)

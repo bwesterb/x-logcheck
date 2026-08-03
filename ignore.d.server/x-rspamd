@@ -2,3 +2,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: rspamd.service: Sending signal SIGUSR1 to process
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: rspamd.service: Sent signal SIGUSR1 to main process
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: rspamd.service: Sending signal SIGUSR1 to process
+# configuration reload on start
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: [[:digit:]-]{10} [[:digit:]:]+ #[[:digit:]]+\([^)]*\) <[[:xdigit:]]+>; main; main: rspamd [^ ]+ is loading configuration
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ rspamd\[[[:digit:]]+\]: [[:digit:]-]{10} [[:digit:]:]+ #[[:digit:]]+\([^)]*\) <[[:xdigit:]]+>; main; main: rspamd [^ ]+ is loading configuration

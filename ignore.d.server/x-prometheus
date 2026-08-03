@@ -25,3 +25,9 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ prometheus\[[0-9]+\]: .* msg="WAL checkpoint complete"
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ prometheus\[[0-9]+\]: .* msg="compact blocks"
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ prometheus\[[0-9]+\]: .* msg="Deleting obsolete block"
+# node_exporter start-up banner: build info, parsed flags, enabled collectors
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus-node-exporter\[[[:digit:]]+\]: time=[^ ]+ level=INFO source=[^ ]+ msg=
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ prometheus-node-exporter\[[[:digit:]]+\]: time=[^ ]+ level=INFO source=[^ ]+ msg=
+# ping_exporter cannot re-resolve its targets; transient resolver timeouts
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ping_exporter\[[[:digit:]]+\]: time=\"[^\"]*\" level=error msg=\"could not refresh dns: 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ping_exporter\[[[:digit:]]+\]: time=\"[^\"]*\" level=error msg=\"could not refresh dns: 

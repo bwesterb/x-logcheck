@@ -1,0 +1,5 @@
+# interface bring-up/tear-down chatter
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ifup\[[[:digit:]]+\]: Waiting for DAD\.\.\. Done$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ifup\[[[:digit:]]+\]: Waiting for DAD\.\.\. Done$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ifdown\[[[:digit:]]+\]: Error: ipv6: address not found\.$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ifdown\[[[:digit:]]+\]: Error: ipv6: address not found\.$

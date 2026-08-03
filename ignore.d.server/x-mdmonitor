@@ -9,3 +9,6 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ mdadm\[[[:digit:]]+\]: mdadm: (RebuildStarted|Rebuild[[:digit:]]+|RebuildFinished) event detected on md device /dev/md[[:digit:]]+$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mdcheck\[[[:digit:]]+\]: (Re-enabling array checks for previously finished arrays|checking /dev/md[[:digit:]]+ from [[:digit:]]+|finished checking /dev/md[[:digit:]]+)$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ mdcheck\[[[:digit:]]+\]: (Re-enabling array checks for previously finished arrays|checking /dev/md[[:digit:]]+ from [[:digit:]]+|finished checking /dev/md[[:digit:]]+)$
+# mdcheck pausing the monthly scrub; the array is fine
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mdcheck\[[[:digit:]]+\]: pause checking /dev/md[[:digit:]]+ at [[:digit:]]+$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ mdcheck\[[[:digit:]]+\]: pause checking /dev/md[[:digit:]]+ at [[:digit:]]+$

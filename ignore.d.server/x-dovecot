@@ -29,3 +29,10 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dovecot: (lmtp|pop3|imap)-login: (Login aborted|Aborted login|Disconnected):
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dovecot: (lmtp|pop3|imap)(-login)?(\([^)]*\))?(<[^>]*>)*: (Connection closed|Disconnected)
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dovecot: lmtp\([^)]*\)(<[^>]*>)*: (sieve: )?msgid=.*: (stored mail into mailbox|saved mail to)
+# restart lifecycle: start-up banner and SIGTERM of the worker processes
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot(\[[[:digit:]]+\])?: master: Dovecot v[^ ]+ \([[:xdigit:]]+\) starting up for 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dovecot(\[[[:digit:]]+\])?: master: Dovecot v[^ ]+ \([[:xdigit:]]+\) starting up for 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot(\[[[:digit:]]+\])?: [^:]+: Warning: Killed with signal 15 \(by pid=[[:digit:]]+ uid=[[:digit:]]+ code=kill\)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dovecot(\[[[:digit:]]+\])?: [^:]+: Warning: Killed with signal 15 \(by pid=[[:digit:]]+ uid=[[:digit:]]+ code=kill\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot(\[[[:digit:]]+\])?: log\([[:digit:]]+\): Warning: Shutting down logging for '[^']*' with [[:digit:]]+ clients$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dovecot(\[[[:digit:]]+\])?: log\([[:digit:]]+\): Warning: Shutting down logging for '[^']*' with [[:digit:]]+ clients$

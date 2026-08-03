@@ -81,3 +81,11 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: [[:digit:]]+: 'max-cache-size [[:digit:]]+%' - setting to [[:digit:]]+MB
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: [[:digit:]]{1,2}-[[:alpha:]]{3}-[[:digit:]]{4} [[:digit:]:.]+ connected to notification socket
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: [[:digit:]]{1,2}-[[:alpha:]]{3}-[[:digit:]]{4} [[:digit:]:.]+ connected to notification socket
+# response-rate limiting kicking in against a version.bind scanner
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client @0x[[:xdigit:]]+ [^ ]+ \([^)]*\): rate limit drop response to 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client @0x[[:xdigit:]]+ [^ ]+ \([^)]*\): rate limit drop response to 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (limit|stop limiting) responses to 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (limit|stop limiting) responses to 
+# clean shutdown on restart
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: exiting$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: exiting$

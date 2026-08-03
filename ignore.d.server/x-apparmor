@@ -1,0 +1,3 @@
+# profiles reloaded on boot and on package upgrades
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ apparmor\.systemd\[[[:digit:]]+\]: (Restarting AppArmor|Reloading AppArmor profiles)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ apparmor\.systemd\[[[:digit:]]+\]: (Restarting AppArmor|Reloading AppArmor profiles)$

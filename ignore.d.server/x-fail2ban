@@ -1,0 +1,5 @@
+# start/stop lifecycle; actual bans stay visible
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fail2ban-server\[[[:digit:]]+\]: Server ready$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ fail2ban-server\[[[:digit:]]+\]: Server ready$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fail2ban-client\[[[:digit:]]+\]: Shutdown successful$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ fail2ban-client\[[[:digit:]]+\]: Shutdown successful$

@@ -119,3 +119,8 @@
 # client offered a malformed public key
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: error: userauth_pubkey: parse key: Invalid key length \[preauth\]$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: error: userauth_pubkey: parse key: Invalid key length \[preauth\]$
+# scanner drops the connection while sshd is still answering
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd-session\[[[:digit:]]+\]: fatal: userauth_finish: send failure packet: Broken pipe \[preauth\]$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd-session\[[[:digit:]]+\]: fatal: userauth_finish: send failure packet: Broken pipe \[preauth\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd-session\[[[:digit:]]+\]: Read error from remote host [.:[:xdigit:]]+ port [[:digit:]]+: Connection reset by peer$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd-session\[[[:digit:]]+\]: Read error from remote host [.:[:xdigit:]]+ port [[:digit:]]+: Connection reset by peer$
