@@ -1,0 +1,5 @@
+# cellar (wine-cellar inbox service) start-up banner, one instance per user
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cellar\[[[:digit:]]+\]: cellar: config /home/[[:alnum:]_-]+/\.config/cellar/config\.toml$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ cellar\[[[:digit:]]+\]: cellar: config /home/[[:alnum:]_-]+/\.config/cellar/config\.toml$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cellar\[[[:digit:]]+\]: cellar: https://[^ ]+ → http://127\.0\.0\.1:[[:digit:]]+/cellar/add$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ cellar\[[[:digit:]]+\]: cellar: https://[^ ]+ → http://127\.0\.0\.1:[[:digit:]]+/cellar/add$

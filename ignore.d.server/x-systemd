@@ -220,3 +220,11 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd-shutdown\[[[:digit:]]+\]: (Syncing filesystems and block devices\.$|Sending SIGTERM to remaining processes\.\.\.$)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-udevd\[[[:digit:]]+\]: Using default interface naming scheme '[^']*'\.$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd-udevd\[[[:digit:]]+\]: Using default interface naming scheme '[^']*'\.$
+# user manager re-exec (SIGRTMIN+25) on package upgrade, and pid1 re-exec from apt-daily-upgrade
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: user@[[:digit:]]+\.service: Sent signal SIGRTMIN\+25 to main process [[:digit:]]+ \(systemd\) on client request\.$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: user@[[:digit:]]+\.service: Sent signal SIGRTMIN\+25 to main process [[:digit:]]+ \(systemd\) on client request\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Reexecution requested from client PID [[:digit:]]+ \('systemctl'\) \(unit apt-daily-upgrade\.service\)\.\.\.$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Reexecution requested from client PID [[:digit:]]+ \('systemctl'\) \(unit apt-daily-upgrade\.service\)\.\.\.$
+# harmless job-ordering complaint when a unit is restarted while its jobs are queued
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Requested transaction contradicts existing jobs: Resource deadlock avoided$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Requested transaction contradicts existing jobs: Resource deadlock avoided$

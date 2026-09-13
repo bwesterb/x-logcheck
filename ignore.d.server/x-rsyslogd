@@ -5,3 +5,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ liblogging-stdlog: \[origin software="rsyslogd" swVersion="[0-9.]+" x-pid="[0-9]+" x-info="http://www.rsyslog.com"\] rsyslogd was HUPed$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: rsyslog.service: Sent signal SIGHUP to main process
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: rsyslog.service: Sent signal SIGHUP to main process
+# rsyslogd HUP (logrotate) in the modern origin format, incl. the 'message repeated' wrapper
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ rsyslogd(\[[[:digit:]]+\])?: +(message repeated [[:digit:]]+ times: \[)?\[origin software=\"rsyslogd\" swVersion=\"[0-9.]+\" x-pid=\"[0-9]+\" x-info=\"https?://www\.rsyslog\.com\"\] rsyslogd was HUPed\]?$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ rsyslogd(\[[[:digit:]]+\])?: +(message repeated [[:digit:]]+ times: \[)?\[origin software=\"rsyslogd\" swVersion=\"[0-9.]+\" x-pid=\"[0-9]+\" x-info=\"https?://www\.rsyslog\.com\"\] rsyslogd was HUPed\]?$

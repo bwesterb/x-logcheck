@@ -21,3 +21,10 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: Unknown (username|group) "[^"]+" in message bus configuration file$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: \[[^]]+\] Reloaded configuration$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: \[[^]]+\] Reloaded configuration$
+# bluez not present on this box; repeated session-bus reloads; session-bus systemd1 activation (pidfd form)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: \[system\] Failed to activate service 'org\.bluez': timed out \(service_start_timeout=[[:digit:]]+ms\)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: \[system\] Failed to activate service 'org\.bluez': timed out \(service_start_timeout=[[:digit:]]+ms\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: message repeated [[:digit:]]+ times: \[ \[[^]]+\] Reloaded configuration\]$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: message repeated [[:digit:]]+ times: \[ \[[^]]+\] Reloaded configuration\]$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: \[session uid=[[:digit:]]+ pid=[[:digit:]]+( pidfd=[[:digit:]]+)?\] Successfully activated service '[^']+'$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dbus-daemon\[[[:digit:]]+\]: \[session uid=[[:digit:]]+ pid=[[:digit:]]+( pidfd=[[:digit:]]+)?\] Successfully activated service '[^']+'$

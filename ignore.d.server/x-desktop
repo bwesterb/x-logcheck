@@ -87,3 +87,17 @@
 # accounts-daemon startup banner
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ accounts-daemon\[[[:digit:]]+\]: started daemon version 
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ accounts-daemon\[[[:digit:]]+\]: started daemon version 
+# spice guest agent on a GUI VM with no active session
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ spice-vdagentd: (message repeated [[:digit:]]+ times: \[ )?Error getting active session: No data available\]?$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ spice-vdagentd: (message repeated [[:digit:]]+ times: \[ )?Error getting active session: No data available\]?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ \(spice-vdagentd\)\[[[:digit:]]+\]: spice-vdagentd\.service: Referenced but unset environment variable evaluates to an empty string: SPICE_VDAGENTD_EXTRA_ARGS$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(spice-vdagentd\)\[[[:digit:]]+\]: spice-vdagentd\.service: Referenced but unset environment variable evaluates to an empty string: SPICE_VDAGENTD_EXTRA_ARGS$
+# gnome-remote-desktop without a TPM, gdm not running, fwupd daemon lifecycle, dbus-send replies
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ gnome-remote-desktop-configuration-daemon\[[[:digit:]]+\]: Init TPM credentials failed because No TPM device found, using GKeyFile as fallback$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ gnome-remote-desktop-configuration-daemon\[[[:digit:]]+\]: Init TPM credentials failed because No TPM device found, using GKeyFile as fallback$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: gdm\.service: Unit cannot be reloaded because it is inactive\.$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: gdm\.service: Unit cannot be reloaded because it is inactive\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fwupd\[[[:digit:]]+\]: [[:digit:]:.]+ FuMain +(fwupd [[:digit:].]+ ready for requests \(locale [^)]+\)|Received SIGTERM)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ fwupd\[[[:digit:]]+\]: [[:digit:]:.]+ FuMain +(fwupd [[:digit:].]+ ready for requests \(locale [^)]+\)|Received SIGTERM)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dbus-send\[[[:digit:]]+\]: method return time=[[:digit:].]+ sender=org\.freedesktop\.DBus -> destination=:[[:digit:].]+ serial=[[:digit:]]+ reply_serial=[[:digit:]]+$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dbus-send\[[[:digit:]]+\]: method return time=[[:digit:].]+ sender=org\.freedesktop\.DBus -> destination=:[[:digit:].]+ serial=[[:digit:]]+ reply_serial=[[:digit:]]+$

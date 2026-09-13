@@ -84,8 +84,22 @@
 # response-rate limiting kicking in against a version.bind scanner
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client @0x[[:xdigit:]]+ [^ ]+ \([^)]*\): rate limit drop response to 
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client @0x[[:xdigit:]]+ [^ ]+ \([^)]*\): rate limit drop response to 
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (limit|stop limiting) responses to 
-^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (limit|stop limiting) responses to 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (limit|stop limiting) ([A-Z]+ )?(error )?responses to 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (limit|stop limiting) ([A-Z]+ )?(error )?responses to 
 # clean shutdown on restart
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: exiting$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: exiting$
+# more recursive-resolver noise about broken/remote domains
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (deadlock found|quota reached|connection reset|RRSIG has expired|RRSIG failed to verify|insecurity proof failed) resolving '[^']+': [^ ]+$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (deadlock found|quota reached|connection reset|RRSIG has expired|RRSIG failed to verify|insecurity proof failed) resolving '[^']+': [^ ]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: gave up on resolving '[^']+'$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: gave up on resolving '[^']+'$
+# named talking to its own loopback forwarder without a cookie (harmless)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (message repeated [[:digit:]]+ times: \[ )?missing expected cookie from 127\.0\.0\.1#53\]?$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (message repeated [[:digit:]]+ times: \[ )?missing expected cookie from 127\.0\.0\.1#53\]?$
+# RRL table growth (bins-first wording, newer bind)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: increase from [[:digit:]]+ to [[:digit:]]+ RRL bins for [[:digit:]]+ entries; average search length [[:digit:].]+$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: increase from [[:digit:]]+ to [[:digit:]]+ RRL bins for [[:digit:]]+ entries; average search length [[:digit:].]+$
+# caddy's TSIG-signed dns-01 dynamic updates
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client @0x[[:xdigit:]]+ [^ ]+/key caddy-acme: signer \"caddy-acme\" approved$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client @0x[[:xdigit:]]+ [^ ]+/key caddy-acme: signer \"caddy-acme\" approved$

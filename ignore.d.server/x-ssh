@@ -124,3 +124,9 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd-session\[[[:digit:]]+\]: fatal: userauth_finish: send failure packet: Broken pipe \[preauth\]$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd-session\[[[:digit:]]+\]: Read error from remote host [.:[:xdigit:]]+ port [[:digit:]]+: Connection reset by peer$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd-session\[[[:digit:]]+\]: Read error from remote host [.:[:xdigit:]]+ port [[:digit:]]+: Connection reset by peer$
+# sshd MaxStartups throttling summary during probe floods
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Maxstartups logging rate-limited: additional [[:digit:]]+ connections dropped$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd\[[[:digit:]]+\]: Maxstartups logging rate-limited: additional [[:digit:]]+ connections dropped$
+# client vanished mid-session (roaming laptop / phone)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd-session\[[[:digit:]]+\]: Read error from remote host [.:[:xdigit:]]+ port [[:digit:]]+: No route to host$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd-session\[[[:digit:]]+\]: Read error from remote host [.:[:xdigit:]]+ port [[:digit:]]+: No route to host$

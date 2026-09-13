@@ -76,3 +76,6 @@
 # monthly RAID scrub paused by mdcheck
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\])? md: md[[:digit:]]+: check interrupted\.$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ kernel: (\[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\] )?md: md[[:digit:]]+: check interrupted\.$
+# workqueue CPU-hog advisory (informational)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel: (\[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\] )?workqueue: [[:alnum:]_]+ hogged CPU for >[[:digit:]]+us [[:digit:]]+ times, consider switching to WQ_UNBOUND$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ kernel: (\[[[:space:]]*[[:digit:]]+\.[[:digit:]]+\] )?workqueue: [[:alnum:]_]+ hogged CPU for >[[:digit:]]+us [[:digit:]]+ times, consider switching to WQ_UNBOUND$

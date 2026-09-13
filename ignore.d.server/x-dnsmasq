@@ -26,3 +26,6 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: message repeated [[:digit:]]+ times: \[ Insecure reply received for DS [^ ]+, assuming that's OK for a RFC-1918 address\.\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: message repeated [[:digit:]]+ times: \[ Insecure DS reply received for [^ ]+, check domain configuration and upstream DNS server DNSSEC support\]$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq\[[[:digit:]]+\]: message repeated [[:digit:]]+ times: \[ Insecure DS reply received for [^ ]+, check domain configuration and upstream DNS server DNSSEC support\]$
+# dnsmasq's VRF source-address workaround notice at start-up
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: Working around kernel bug: faulty source address scope for VRF slave [[:alnum:]_-]+$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dnsmasq-dhcp\[[[:digit:]]+\]: Working around kernel bug: faulty source address scope for VRF slave [[:alnum:]_-]+$
