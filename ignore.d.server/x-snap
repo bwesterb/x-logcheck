@@ -41,3 +41,6 @@
 # snap store rate-limiting the auto-refresh check
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ snapd\[[[:digit:]]+\]: (autorefresh\.go:[[:digit:]]+: Cannot prepare auto-refresh change|stateengine\.go:[[:digit:]]+: state ensure error): too many requests$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ snapd\[[[:digit:]]+\]: (autorefresh\.go:[[:digit:]]+: Cannot prepare auto-refresh change|stateengine\.go:[[:digit:]]+: state ensure error): too many requests$
+# user-requested snap install
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ snapd\[[[:digit:]]+\]: api_snaps\.go:[[:digit:]]+: Installing snap "[^"]+" revision [^ ]+$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ snapd\[[[:digit:]]+\]: api_snaps\.go:[[:digit:]]+: Installing snap "[^"]+" revision [^ ]+$

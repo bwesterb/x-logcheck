@@ -130,3 +130,9 @@
 # client vanished mid-session (roaming laptop / phone)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd-session\[[[:digit:]]+\]: Read error from remote host [.:[:xdigit:]]+ port [[:digit:]]+: No route to host$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd-session\[[[:digit:]]+\]: Read error from remote host [.:[:xdigit:]]+ port [[:digit:]]+: No route to host$
+# Debian 13 dropped /var/log/lastlog; sshd still tries it on every login
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd-session\[[[:digit:]]+\]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd-session\[[[:digit:]]+\]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory$
+# scanner resets the connection before sshd can read the peer address
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd-session\[[[:digit:]]+\]: warning: can't get client address: Connection reset by peer$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd-session\[[[:digit:]]+\]: warning: can't get client address: Connection reset by peer$

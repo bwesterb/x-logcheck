@@ -103,3 +103,6 @@
 # caddy's TSIG-signed dns-01 dynamic updates
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client @0x[[:xdigit:]]+ [^ ]+/key caddy-acme: signer \"caddy-acme\" approved$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client @0x[[:xdigit:]]+ [^ ]+/key caddy-acme: signer \"caddy-acme\" approved$
+# remote nameserver answers with an empty question section (broken remote domain)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: DNS format error from [^ ]+ resolving [^ ]+ for [^:]+: empty question section$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: DNS format error from [^ ]+ resolving [^ ]+ for [^:]+: empty question section$

@@ -30,4 +30,7 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ prometheus-node-exporter\[[[:digit:]]+\]: time=[^ ]+ level=INFO source=[^ ]+ msg=
 # ping_exporter cannot re-resolve its targets; transient resolver timeouts
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ping_exporter\[[[:digit:]]+\]: time=\"[^\"]*\" level=error msg=\"could not refresh dns: 
-^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ping_exporter\[[[:digit:]]+\]: time=\"[^\"]*\" level=error msg=\"could not refresh dns: 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ping_exporter\[[[:digit:]]+\]: time=\"[^\"]*\" level=error msg=\"could not refresh dns:
+# ping_exporter re-resolving its targets: per-address add/remove on DNS refresh
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ping_exporter\[[[:digit:]]+\]: time="[^"]*" level=info msg="(adding|removing) target for host [^ ]+ \(\{[.:[:xdigit:]]+ \}\)" func="main\.\(\*target\)\.(add|cleanUp)"
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ping_exporter\[[[:digit:]]+\]: time="[^"]*" level=info msg="(adding|removing) target for host [^ ]+ \(\{[.:[:xdigit:]]+ \}\)" func="main\.\(\*target\)\.(add|cleanUp)"
