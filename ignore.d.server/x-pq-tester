@@ -29,3 +29,6 @@
 # start-up banner
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: [[:digit:]/]+ [[:digit:]:]+ Listening on [^ ]+ \(TLS\)$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: [[:digit:]/]+ [[:digit:]:]+ Listening on [^ ]+ \(TLS\)$
+# 🤖 2026-10-26: scanners offering no key exchange pq-tester supports
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* tls: no key exchanges supported by both client and server$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ pq-tester\[[[:digit:]]+\]: .* http: TLS handshake error from .* tls: no key exchanges supported by both client and server$

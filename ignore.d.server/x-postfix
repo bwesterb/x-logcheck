@@ -103,3 +103,6 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: NOQUEUE: timeout after (HELP|HELO|MAIL) from 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [0-9A-F]{6,}: timeout after (RCPT|MAIL|HELO|EHLO) from 
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: [0-9A-F]{6,}: timeout after (RCPT|MAIL|HELO|EHLO) from 
+# 🤖 2026-10-26: smtp client TLS summary per delivery (smtp_tls_loglevel = 1)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: (Untrusted|Trusted|Verified|Anonymous) TLS connection established to [^ ]+: TLSv1\.[23] with cipher 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: (Untrusted|Trusted|Verified|Anonymous) TLS connection established to [^ ]+: TLSv1\.[23] with cipher 
