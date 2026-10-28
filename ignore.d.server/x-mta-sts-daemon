@@ -1,0 +1,3 @@
+# 🤖 2026-10-28: postfix-mta-sts-resolver failing to fetch one remote domain's policy (their problem; mail falls back to opportunistic TLS)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ mta-sts-daemon\[[[:digit:]]+\]: [[:digit:]-]{10} [[:digit:]:]{8} WARNING  RES: STS policy fetch for domain '[^']+' failed with error: 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ mta-sts-daemon\[[[:digit:]]+\]: [[:digit:]-]{10} [[:digit:]:]{8} WARNING  RES: STS policy fetch for domain '[^']+' failed with error: 

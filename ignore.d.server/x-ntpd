@@ -10,3 +10,6 @@
 # the systemd wrapper re-logs ntpd's own start-up lines
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ntp-systemd-wrapper\[[[:digit:]]+\]: [[:digit:]-]{10}T[[:digit:]:]+ ntpd\[[[:digit:]]+\]: INIT: 
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ntp-systemd-wrapper\[[[:digit:]]+\]: [[:digit:]-]{10}T[[:digit:]:]+ ntpd\[[[:digit:]]+\]: INIT: 
+# 🤖 2026-10-28: scanners sending NTP mode 6/7 (extended) requests; ntpsec logs a summary and a hex dump
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ntpd\[[[:digit:]]+\]: EX-REQ: 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ntpd\[[[:digit:]]+\]: EX-REQ: 

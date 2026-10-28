@@ -228,3 +228,6 @@
 # harmless job-ordering complaint when a unit is restarted while its jobs are queued
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Requested transaction contradicts existing jobs: Resource deadlock avoided$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Requested transaction contradicts existing jobs: Resource deadlock avoided$
+# 🤖 2026-10-28: networkd-dispatcher on sw (no wireless tools installed)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ networkd-dispatcher\[[[:digit:]]+\]: No valid path found for iwconfig$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ networkd-dispatcher\[[[:digit:]]+\]: No valid path found for iwconfig$

@@ -109,3 +109,6 @@
 # 🤖 2026-10-26: scanners sending an IP address as SNI (warned since the smtpd SNI map)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: TLS SNI from [^ ]+ is invalid: ([[:digit:]]{1,3}\.){3}[[:digit:]]{1,3}$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: warning: TLS SNI from [^ ]+ is invalid: ([[:digit:]]{1,3}\.){3}[[:digit:]]{1,3}$
+# 🤖 2026-10-28: cleanup reopening a lookup table after postmap rebuilt it
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: table hash:[^ ]+ has changed -- restarting$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: table hash:[^ ]+ has changed -- restarting$

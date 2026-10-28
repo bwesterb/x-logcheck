@@ -1,6 +1,10 @@
 # apt.systemd.daily conffile backup: tar warns about files removed on package upgrade
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ apt.systemd.daily\[[[:digit:]]+\]: tar: (Exiting with failure status due to previous errors|\.remove-on-upgrade .* Not found in archive)$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ apt.systemd.daily\[[[:digit:]]+\]: tar: (Exiting with failure status due to previous errors|\.remove-on-upgrade .* Not found in archive)$
-# package postinst re-ensuring the syslog system user on rsyslog upgrade
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ adduser\[[[:digit:]]+\]: (The system user `syslog' already exists\. Exiting\.|The user `syslog' is already a member of `adm'\.)$
-^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ adduser\[[[:digit:]]+\]: (The system user `syslog' already exists\. Exiting\.|The user `syslog' is already a member of `adm'\.)$
+# package postinst re-ensuring users/groups on upgrade: rsyslog syslog/adm
+# 🤖 2026-10-28: generalised, libvirt does the same for bas/libvirt
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ adduser\[[[:digit:]]+\]: (The system user `syslog' already exists\. Exiting\.|The user `[[:alnum:]_-]+' is already a member of `[[:alnum:]_-]+'\.)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ adduser\[[[:digit:]]+\]: (The system user `syslog' already exists\. Exiting\.|The user `[[:alnum:]_-]+' is already a member of `[[:alnum:]_-]+'\.)$
+# 🤖 2026-10-28: unattended-upgrade-shutdown (re)started by an upgrade: Python deprecation warning, 2 lines
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ unattended-upgrade-shutdown\[[[:digit:]]+\]: (/usr/share/unattended-upgrades/unattended-upgrade-shutdown:[[:digit:]]+: PyGIDeprecationWarning: GLib\.unix_signal_add is deprecated; use GLibUnix\.signal_add instead|  GLib\.unix_signal_add\(GLib\.PRIORITY_DEFAULT, sig,)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ unattended-upgrade-shutdown\[[[:digit:]]+\]: (/usr/share/unattended-upgrades/unattended-upgrade-shutdown:[[:digit:]]+: PyGIDeprecationWarning: GLib\.unix_signal_add is deprecated; use GLibUnix\.signal_add instead|  GLib\.unix_signal_add\(GLib\.PRIORITY_DEFAULT, sig,)$

@@ -44,3 +44,6 @@
 # user-requested snap install
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ snapd\[[[:digit:]]+\]: api_snaps\.go:[[:digit:]]+: Installing snap "[^"]+" revision [^ ]+$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ snapd\[[[:digit:]]+\]: api_snaps\.go:[[:digit:]]+: Installing snap "[^"]+" revision [^ ]+$
+# 🤖 2026-10-28: part of every snap refresh
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ snapd\[[[:digit:]]+\]: handlers\.go:[[:digit:]]+: scheduling delayed effects for snap "[^"]+"$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ snapd\[[[:digit:]]+\]: handlers\.go:[[:digit:]]+: scheduling delayed effects for snap "[^"]+"$

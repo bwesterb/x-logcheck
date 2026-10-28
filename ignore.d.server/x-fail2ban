@@ -3,3 +3,6 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ fail2ban-server\[[[:digit:]]+\]: Server ready$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fail2ban-client\[[[:digit:]]+\]: Shutdown successful$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ fail2ban-client\[[[:digit:]]+\]: Shutdown successful$
+# 🤖 2026-10-28: fail2ban-client acknowledging a reload (logrotate, systemctl reload)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ fail2ban-client\[[[:digit:]]+\]: OK$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ fail2ban-client\[[[:digit:]]+\]: OK$

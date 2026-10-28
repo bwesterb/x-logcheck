@@ -4,3 +4,6 @@
 # systemd (snap.cups.*.service: Main process exited / dumped), which stays visible.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cups\.(cupsd|cups-browsed)\[[[:digit:]]+\]: (\+( |$)|==> |exec( |$)|echo( |$)|cat( |$)|true$|Terminated$| )
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ cups\.(cupsd|cups-browsed)\[[[:digit:]]+\]: (\+( |$)|==> |exec( |$)|echo( |$)|cat( |$)|true$|Terminated$| )
+# 🤖 2026-10-28: the cups snap's own scripts use the old chown user.group syntax (on every refresh)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ cups\.cupsd\[[[:digit:]]+\]: chown: warning: '\.' should be ':': '[[:alnum:]_-]+\.[[:alnum:]_-]+'$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ cups\.cupsd\[[[:digit:]]+\]: chown: warning: '\.' should be ':': '[[:alnum:]_-]+\.[[:alnum:]_-]+'$
