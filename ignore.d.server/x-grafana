@@ -15,3 +15,11 @@
 # 🤖 2026-10-28: client went away while a static plugin file was being sent
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana(-server)?\[[[:digit:]]+\]: logger=middleware\.gzip t=[^ ]+ level=warn msg="Failed to write gzipped response" path=/public/
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ grafana(-server)?\[[[:digit:]]+\]: logger=middleware\.gzip t=[^ ]+ level=warn msg="Failed to write gzipped response" path=/public/
+# 🤖 2026-11-02: Grafana 13.3 polls search manifests every ~50s and warns when there are none
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana(-server)?\[[[:digit:]]+\]: logger=search-manifest-watcher t=[^ ]+ level=warn msg="manifest watcher(: source listed zero manifests" source=[^ ]+| poll cycle: zero manifests, keeping previous set")$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ grafana(-server)?\[[[:digit:]]+\]: logger=search-manifest-watcher t=[^ ]+ level=warn msg="manifest watcher(: source listed zero manifests" source=[^ ]+| poll cycle: zero manifests, keeping previous set")$
+# 🤖 2026-11-02: plugin subprocesses and job controller stopped on Grafana restart
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana(-server)?\[[[:digit:]]+\]: logger=plugin\.[^ ]+ t=[^ ]+ level=error msg="plugin process exited" plugin=[^ ]+ id=[[:digit:]]+ error="signal: terminated"$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ grafana(-server)?\[[[:digit:]]+\]: logger=plugin\.[^ ]+ t=[^ ]+ level=error msg="plugin process exited" plugin=[^ ]+ id=[[:digit:]]+ error="signal: terminated"$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ grafana(-server)?\[[[:digit:]]+\]: t=[^ ]+ level=error caller=logger\.go:[[:digit:]]+ time=[^ ]+ msg="job cleanup controller failed" error="context canceled"$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ grafana(-server)?\[[[:digit:]]+\]: t=[^ ]+ level=error caller=logger\.go:[[:digit:]]+ time=[^ ]+ msg="job cleanup controller failed" error="context canceled"$

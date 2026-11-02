@@ -112,3 +112,6 @@
 # 🤖 2026-10-28: cleanup reopening a lookup table after postmap rebuilt it
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: table hash:[^ ]+ has changed -- restarting$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/cleanup\[[[:digit:]]+\]: table hash:[^ ]+ has changed -- restarting$
+# 🤖 2026-11-02: clients (scanners) sending an SNI name without its own cert get the default MX chain
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: TLS SNI [._[:alnum:]-]+ from [^ ]+ not matched, using default chain$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: TLS SNI [._[:alnum:]-]+ from [^ ]+ not matched, using default chain$
