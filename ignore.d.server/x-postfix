@@ -96,6 +96,9 @@
 # scanner/exploit probes rejected outright (relay denied / client host rejected)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: NOQUEUE: reject: RCPT from [^ ]+\[[^]]+\]: (454 4\.7\.1|554 5\.7\.1) <.*>: (Relay access denied|Client host rejected: Access denied); from=<
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: NOQUEUE: reject: RCPT from [^ ]+\[[^]]+\]: (454 4\.7\.1|554 5\.7\.1) <.*>: (Relay access denied|Client host rejected: Access denied); from=<
+# Unknown addresses on the mailman list domains (relay_recipient_maps, 2026-11-04)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: (NOQUEUE|[[:alnum:]]+): reject: RCPT from [^ ]+\[[^]]+\]: 550 5\.1\.1 <[^>@]+@lists\.(westerbaan\.name|nachtenontij\.nl)>: Recipient address rejected: User unknown in relay recipient table; from=<
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd\[[[:digit:]]+\]: (NOQUEUE|[[:alnum:]]+): reject: RCPT from [^ ]+\[[^]]+\]: 550 5\.1\.1 <[^>@]+@lists\.(westerbaan\.name|nachtenontij\.nl)>: Recipient address rejected: User unknown in relay recipient table; from=<
 # more scanner verbs after which the session is dropped / times out
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: NOQUEUE: lost connection after MAIL from 
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix/smtpd?\[[[:digit:]]+\]: NOQUEUE: lost connection after MAIL from 
