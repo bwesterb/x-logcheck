@@ -1,0 +1,9 @@
+# 🤖 2026-11-06: Omada controller (Podman Quadlet omada.service on sw): its container stdout
+# (Java app log, entrypoint banners, firmware release notes) reaches syslog;
+# the controller keeps its own logs in its data volume. Unit failures still
+# show via systemd.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ omada\[[[:digit:]]+\]:( .*)?$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ omada\[[[:digit:]]+\]:( .*)?$
+# 🤖 2026-11-06: Quadlet omada-network.service prints the network name on start
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ omada-network\[[[:digit:]]+\]: omada$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ omada-network\[[[:digit:]]+\]: omada$

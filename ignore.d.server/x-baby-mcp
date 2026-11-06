@@ -1,0 +1,6 @@
+# 🤖 2026-11-06: baby-mcp (Eva baby log MCP on sw): start-up banner and successful tool calls.
+# Logins, OAuth registrations/approvals, suggestions and push errors stay visible.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ baby-mcp\[[[:digit:]]+\]: baby-mcp [[:digit:].]+: https://[^ ]+ on 127\.0\.0\.1:[[:digit:]]+$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ baby-mcp\[[[:digit:]]+\]: baby-mcp [[:digit:].]+: https://[^ ]+ on 127\.0\.0\.1:[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ baby-mcp\[[[:digit:]]+\]: mcp: user [[:digit:]]+ [[:alnum:]_]+ ok in [[:digit:].]+[^ ]*s$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ baby-mcp\[[[:digit:]]+\]: mcp: user [[:digit:]]+ [[:alnum:]_]+ ok in [[:digit:].]+[^ ]*s$

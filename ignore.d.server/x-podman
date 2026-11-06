@@ -1,0 +1,6 @@
+# 🤖 2026-11-06: Podman container lifecycle events (journald event logger); "died" stays visible
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ podman\[[[:digit:]]+\]: [[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2} [[:digit:]:.]+ [+-][[:digit:]]{4} [[:upper:]]+ m=\+[[:digit:].]+ (system refresh|image pull |container (create|init|start|exec|exec_died|remove|cleanup) |network create )
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ podman\[[[:digit:]]+\]: [[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2} [[:digit:]:.]+ [+-][[:digit:]]{4} [[:upper:]]+ m=\+[[:digit:].]+ (system refresh|image pull |container (create|init|start|exec|exec_died|remove|cleanup) |network create )
+# 🤖 2026-11-06: netavark (Podman networking) idle exit
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ netavark\[[[:digit:]]+\]: timeout met: exiting after [[:digit:]]+ secs of inactivity$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ netavark\[[[:digit:]]+\]: timeout met: exiting after [[:digit:]]+ secs of inactivity$

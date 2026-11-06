@@ -109,3 +109,6 @@
 # 🤖 2026-11-02: Caddy's DNS-01 challenge records, key-authenticated
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client @0x[[:xdigit:]]+ [^ ]+/key caddy-acme: updating zone '_acme-challenge\.[._[:alnum:]-]+/IN': (adding an RR at '_acme-challenge\.[._[:alnum:]-]+' TXT |deleting an RR at _acme-challenge\.[._[:alnum:]-]+ TXT)
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: client @0x[[:xdigit:]]+ [^ ]+/key caddy-acme: updating zone '_acme-challenge\.[._[:alnum:]-]+/IN': (adding an RR at '_acme-challenge\.[._[:alnum:]-]+' TXT |deleting an RR at _acme-challenge\.[._[:alnum:]-]+ TXT)
+# 🤖 2026-11-06: rndc reconfig / retransfer (e.g. after zone or delegation edits on sw)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (received control channel command '(reconfig|retransfer [^']+)'|scheduled loading new zones|any newly configured zones are now loaded)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ named\[[[:digit:]]+\]: (received control channel command '(reconfig|retransfer [^']+)'|scheduled loading new zones|any newly configured zones are now loaded)$
