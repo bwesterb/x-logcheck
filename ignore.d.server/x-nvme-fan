@@ -1,0 +1,3 @@
+# 🤖 2026-11-12: nvme-fan on serf (SSD card blower): start, stop and speed steps below 100%; a step to 100% stays visible
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ nvme-fan\[[[:digit:]]+\]: ([[:digit:]]+ C: FAN5 [[:digit:]]{1,2}%( -> [[:digit:]]{1,2}%)?|stopping: FAN5 (back to )?[[:digit:]]{1,2}%|FAN5 from [[:digit:]]+ drives [[:xdigit:]:. ]+; curve \[[][(), [:digit:]]+)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ nvme-fan\[[[:digit:]]+\]: ([[:digit:]]+ C: FAN5 [[:digit:]]{1,2}%( -> [[:digit:]]{1,2}%)?|stopping: FAN5 (back to )?[[:digit:]]{1,2}%|FAN5 from [[:digit:]]+ drives [[:xdigit:]:. ]+; curve \[[][(), [:digit:]]+)$

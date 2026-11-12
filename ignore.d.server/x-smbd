@@ -1,3 +1,6 @@
 # Samba guest session teardown
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd(\[[[:digit:]]+\])?: pam_unix\(samba:session\): session closed for user nobody$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ smbd(\[[[:digit:]]+\])?: pam_unix\(samba:session\): session closed for user nobody$
+# 🤖 2026-11-12: serf: Samba sessions of the household users (LAN only); any other user stays visible
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ smbd(\[[[:digit:]]+\])?: pam_unix\(samba:session\): session (opened for user (bas|martha2)\(uid=[[:digit:]]+\) by \(uid=0\)|closed for user (bas|martha2))$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ smbd(\[[[:digit:]]+\])?: pam_unix\(samba:session\): session (opened for user (bas|martha2)\(uid=[[:digit:]]+\) by \(uid=0\)|closed for user (bas|martha2))$

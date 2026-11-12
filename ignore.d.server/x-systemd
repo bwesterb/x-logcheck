@@ -223,11 +223,17 @@
 # user manager re-exec (SIGRTMIN+25) on package upgrade, and pid1 re-exec from apt-daily-upgrade
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: user@[[:digit:]]+\.service: Sent signal SIGRTMIN\+25 to main process [[:digit:]]+ \(systemd\) on client request\.$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: user@[[:digit:]]+\.service: Sent signal SIGRTMIN\+25 to main process [[:digit:]]+ \(systemd\) on client request\.$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Reexecution requested from client PID [[:digit:]]+ \('systemctl'\) \(unit apt-daily-upgrade\.service\)\.\.\.$
-^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Reexecution requested from client PID [[:digit:]]+ \('systemctl'\) \(unit apt-daily-upgrade\.service\)\.\.\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Reexecution requested from client PID [[:digit:]]+ \('systemctl'\) \(unit (apt-daily-upgrade\.service|session-[[:digit:]]+\.scope)\)\.\.\.$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Reexecution requested from client PID [[:digit:]]+ \('systemctl'\) \(unit (apt-daily-upgrade\.service|session-[[:digit:]]+\.scope)\)\.\.\.$
 # harmless job-ordering complaint when a unit is restarted while its jobs are queued
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Requested transaction contradicts existing jobs: Resource deadlock avoided$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Requested transaction contradicts existing jobs: Resource deadlock avoided$
 # 🤖 2026-10-28: networkd-dispatcher on sw (no wireless tools installed)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ networkd-dispatcher\[[[:digit:]]+\]: No valid path found for iwconfig$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ networkd-dispatcher\[[[:digit:]]+\]: No valid path found for iwconfig$
+# 🤖 2026-11-12: xfsprogs ships a slice with an option systemd no longer supports (serf, on every daemon-reload)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: /usr/lib/systemd/system/system-xfs_scrub\.slice:[[:digit:]]+: Support for option CPUAccounting= has been removed and it is ignored$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: /usr/lib/systemd/system/system-xfs_scrub\.slice:[[:digit:]]+: Support for option CPUAccounting= has been removed and it is ignored$
+# 🤖 2026-11-12: ssh restarted (openssh upgrade) while sessions were open: their processes stay in the cgroup by design
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: ssh\.service: (Found left-over process [[:digit:]]+ \(sshd-(session|auth)\) in control group while starting unit\. Ignoring\.|This usually indicates unclean termination of a previous run, or service implementation deficiencies\.)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: ssh\.service: (Found left-over process [[:digit:]]+ \(sshd-(session|auth)\) in control group while starting unit\. Ignoring\.|This usually indicates unclean termination of a previous run, or service implementation deficiencies\.)$
