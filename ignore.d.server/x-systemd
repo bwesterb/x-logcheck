@@ -153,7 +153,10 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(munin-node\)\[[[:digit:]]+\]: munin-node.service: Referenced but unset environment variable evaluates to an empty string: DAEMON_ARGS
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd-tmpfiles\[[[:digit:]]+\]: .* Duplicate line for path .*, ignoring.
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ \(sd-pam\)(\[[[:digit:]]+\])?: pam_unix\(systemd-user:session\): session closed for user
-^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(sd-pam\): pam_unix\(systemd-user:session\): session closed for user
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(sd-pam\)(\[[[:digit:]]+\])?: pam_unix\(systemd-user:session\): session closed for user
+# 🤖 2026-11-13: user manager stopping at shutdown after logind has already forgotten the session
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ \(sd-pam\)(\[[[:digit:]]+\])?: pam_systemd\(systemd-user:session\): Failed to release session: No session '[[:digit:]]+' known$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(sd-pam\)(\[[[:digit:]]+\])?: pam_systemd\(systemd-user:session\): Failed to release session: No session '[[:digit:]]+' known$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ \(systemd\)(\[[[:digit:]]+\])?: pam_unix\(systemd-user:session\): session opened for user
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ \(systemd\): pam_unix\(systemd-user:session\): session opened for user
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: [^ ]+( - .+)? was skipped because of an unmet condition check \(ConditionPathExists=
@@ -228,9 +231,9 @@
 # harmless job-ordering complaint when a unit is restarted while its jobs are queued
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Requested transaction contradicts existing jobs: Resource deadlock avoided$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Requested transaction contradicts existing jobs: Resource deadlock avoided$
-# 🤖 2026-10-28: networkd-dispatcher on sw (no wireless tools installed)
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ networkd-dispatcher\[[[:digit:]]+\]: No valid path found for iwconfig$
-^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ networkd-dispatcher\[[[:digit:]]+\]: No valid path found for iwconfig$
+# 🤖 2026-10-28: networkd-dispatcher on sw (no wireless tools installed) (🤖 2026-11-13: also iw)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ networkd-dispatcher\[[[:digit:]]+\]: No valid path found for (iw|iwconfig)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ networkd-dispatcher\[[[:digit:]]+\]: No valid path found for (iw|iwconfig)$
 # 🤖 2026-11-12: xfsprogs ships a slice with an option systemd no longer supports (serf, on every daemon-reload)
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: /usr/lib/systemd/system/system-xfs_scrub\.slice:[[:digit:]]+: Support for option CPUAccounting= has been removed and it is ignored$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: /usr/lib/systemd/system/system-xfs_scrub\.slice:[[:digit:]]+: Support for option CPUAccounting= has been removed and it is ignored$

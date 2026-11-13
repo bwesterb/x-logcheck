@@ -53,6 +53,7 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: dispatch_protocol_error:
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: (fatal: )?Timeout before authentication for
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: Corrupted MAC on input
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: Corrupted MAC on input
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: pam_env(sshd:session): deprecated reading of user environment enabled
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: ssh_dispatch_run_fatal: Connection from .* bignum is negative .*
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ sshd(-session)?\[[[:digit:]]+\]: pam_unix\(sshd:auth\): (authentication failure|check pass); .*

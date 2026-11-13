@@ -34,3 +34,11 @@
 # ping_exporter re-resolving its targets: per-address add/remove on DNS refresh
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ping_exporter\[[[:digit:]]+\]: time="[^"]*" level=info msg="(adding|removing) target for host [^ ]+ \(\{[.:[:xdigit:]]+ \}\)" func="main\.\(\*target\)\.(add|cleanUp)"
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ping_exporter\[[[:digit:]]+\]: time="[^"]*" level=info msg="(adding|removing) target for host [^ ]+ \(\{[.:[:xdigit:]]+ \}\)" func="main\.\(\*target\)\.(add|cleanUp)"
+# 🤖 2026-11-13: Prometheus 2.53 start-up and graceful shutdown (info lines; warnings and errors stay visible)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[[:digit:]]+\]: ts=[^ ]+ (caller=[^ ]+ )?level=info 
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ prometheus\[[[:digit:]]+\]: ts=[^ ]+ (caller=[^ ]+ )?level=info 
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ prometheus\[[[:digit:]]+\]: ts=[^ ]+ caller=main\.go:[[:digit:]]+ level=warn msg="Received an OS signal, exiting gracefully\.\.\." signal=terminated$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ prometheus\[[[:digit:]]+\]: ts=[^ ]+ caller=main\.go:[[:digit:]]+ level=warn msg="Received an OS signal, exiting gracefully\.\.\." signal=terminated$
+# 🤖 2026-11-13: ping_exporter start-up banner
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ ping_exporter\[[[:digit:]]+\]: time="[^"]*" level=info msg="(rtt units: [[:digit:]]+|Starting ping exporter \(Version: [^)]+\)|Listening for /metrics on [^ ]+ \(HTTP\))" func=
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ ping_exporter\[[[:digit:]]+\]: time="[^"]*" level=info msg="(rtt units: [[:digit:]]+|Starting ping exporter \(Version: [^)]+\)|Listening for /metrics on [^ ]+ \(HTTP\))" func=
