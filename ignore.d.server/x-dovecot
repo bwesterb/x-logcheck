@@ -36,3 +36,6 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dovecot(\[[[:digit:]]+\])?: [^:]+: Warning: Killed with signal 15 \(by pid=[[:digit:]]+ uid=[[:digit:]]+ code=kill\)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot(\[[[:digit:]]+\])?: log\([[:digit:]]+\): Warning: Shutting down logging for '[^']*' with [[:digit:]]+ clients$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dovecot(\[[[:digit:]]+\])?: log\([[:digit:]]+\): Warning: Shutting down logging for '[^']*' with [[:digit:]]+ clients$
+# 🤖 2026-11-15: configuration reload on SIGHUP (e.g. after a config change)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot(\[[[:digit:]]+\])?: master: Warning: SIGHUP received - reloading configuration$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ dovecot(\[[[:digit:]]+\])?: master: Warning: SIGHUP received - reloading configuration$

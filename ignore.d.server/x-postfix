@@ -52,8 +52,8 @@
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: (postfix: )?To disable backwards compatibility use "postconf compatibility_level=3\.6" and "postfix reload"$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: (postfix/postlog: )?stopping the Postfix mail system$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: (postfix/postlog: )?stopping the Postfix mail system$
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: updating /etc/localtime => /var/spool/postfix//etc/localtime$
-^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: updating /etc/localtime => /var/spool/postfix//etc/localtime$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: updating /etc/(localtime|hosts|nsswitch\.conf|services|resolv\.conf) => /var/spool/postfix//etc/(localtime|hosts|nsswitch\.conf|services|resolv\.conf)$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: updating /etc/(localtime|hosts|nsswitch\.conf|services|resolv\.conf) => /var/spool/postfix//etc/(localtime|hosts|nsswitch\.conf|services|resolv\.conf)$
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: '/usr/lib/[^']+' -> 'lib/[^']+'$
 ^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ postfix\[[[:digit:]]+\]: '/usr/lib/[^']+' -> 'lib/[^']+'$
 # postfix master / postfix-script lifecycle, postsuper queue cleanup

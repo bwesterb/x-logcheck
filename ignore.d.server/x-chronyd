@@ -1,0 +1,5 @@
+# 🤖 2026-11-15: chrony switching between NTP sources (pool rotation on serf)
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ chronyd\[[[:digit:]]+\]: Selected source [.:[:xdigit:]]+( \([-._[:alnum:]]+\))?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ chronyd\[[[:digit:]]+\]: Source [.:[:xdigit:]]+( \([-._[:alnum:]]+\))? replaced with [.:[:xdigit:]]+( \([-._[:alnum:]]+\))?$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ chronyd\[[[:digit:]]+\]: Selected source [.:[:xdigit:]]+( \([-._[:alnum:]]+\))?$
+^[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}T[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}\.[[:digit:]]+[+-][[:digit:]]{2}:[[:digit:]]{2} [._[:alnum:]-]+ chronyd\[[[:digit:]]+\]: Source [.:[:xdigit:]]+( \([-._[:alnum:]]+\))? replaced with [.:[:xdigit:]]+( \([-._[:alnum:]]+\))?$
